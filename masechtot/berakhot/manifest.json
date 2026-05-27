@@ -1,0 +1,631 @@
+{
+  "masechet": "berakhot",
+  "title_he": "ברכות",
+  "pages": [
+    {
+      "amud": "2a",
+      "file": "2a.html",
+      "title_he": "ברכות 2a"
+    },
+    {
+      "amud": "2b",
+      "file": "2b.html",
+      "title_he": "ברכות 2b"
+    },
+    {
+      "amud": "3a",
+      "file": "3a.html",
+      "title_he": "ברכות 3a"
+    },
+    {
+      "amud": "3b",
+      "file": "3b.html",
+      "title_he": "ברכות 3b"
+    },
+    {
+      "amud": "4a",
+      "file": "4a.html",
+      "title_he": "ברכות 4a"
+    },
+    {
+      "amud": "4b",
+      "file": "4b.html",
+      "title_he": "ברכות 4b"
+    },
+    {
+      "amud": "5a",
+      "file": "5a.html",
+      "title_he": "ברכות 5a"
+    },
+    {
+      "amud": "5b",
+      "file": "5b.html",
+      "title_he": "ברכות 5b"
+    },
+    {
+      "amud": "6a",
+      "file": "6a.html",
+      "title_he": "ברכות 6a"
+    },
+    {
+      "amud": "6b",
+      "file": "6b.html",
+      "title_he": "ברכות 6b"
+    },
+    {
+      "amud": "7a",
+      "file": "7a.html",
+      "title_he": "ברכות 7a"
+    },
+    {
+      "amud": "7b",
+      "file": "7b.html",
+      "title_he": "ברכות 7b"
+    },
+    {
+      "amud": "8a",
+      "file": "8a.html",
+      "title_he": "ברכות 8a"
+    },
+    {
+      "amud": "8b",
+      "file": "8b.html",
+      "title_he": "ברכות 8b"
+    },
+    {
+      "amud": "9a",
+      "file": "9a.html",
+      "title_he": "ברכות 9a"
+    },
+    {
+      "amud": "9b",
+      "file": "9b.html",
+      "title_he": "ברכות 9b"
+    },
+    {
+      "amud": "10a",
+      "file": "10a.html",
+      "title_he": "ברכות 10a"
+    },
+    {
+      "amud": "10b",
+      "file": "10b.html",
+      "title_he": "ברכות 10b"
+    },
+    {
+      "amud": "11a",
+      "file": "11a.html",
+      "title_he": "ברכות 11a"
+    },
+    {
+      "amud": "11b",
+      "file": "11b.html",
+      "title_he": "ברכות 11b"
+    },
+    {
+      "amud": "12a",
+      "file": "12a.html",
+      "title_he": "ברכות 12a"
+    },
+    {
+      "amud": "12b",
+      "file": "12b.html",
+      "title_he": "ברכות 12b"
+    },
+    {
+      "amud": "13a",
+      "file": "13a.html",
+      "title_he": "ברכות 13a"
+    },
+    {
+      "amud": "13b",
+      "file": "13b.html",
+      "title_he": "ברכות 13b"
+    },
+    {
+      "amud": "14a",
+      "file": "14a.html",
+      "title_he": "ברכות 14a"
+    },
+    {
+      "amud": "14b",
+      "file": "14b.html",
+      "title_he": "ברכות 14b"
+    },
+    {
+      "amud": "15a",
+      "file": "15a.html",
+      "title_he": "ברכות 15a"
+    },
+    {
+      "amud": "15b",
+      "file": "15b.html",
+      "title_he": "ברכות 15b"
+    },
+    {
+      "amud": "16a",
+      "file": "16a.html",
+      "title_he": "ברכות 16a"
+    },
+    {
+      "amud": "16b",
+      "file": "16b.html",
+      "title_he": "ברכות 16b"
+    },
+    {
+      "amud": "17a",
+      "file": "17a.html",
+      "title_he": "ברכות 17a"
+    },
+    {
+      "amud": "17b",
+      "file": "17b.html",
+      "title_he": "ברכות 17b"
+    },
+    {
+      "amud": "18a",
+      "file": "18a.html",
+      "title_he": "ברכות 18a"
+    },
+    {
+      "amud": "18b",
+      "file": "18b.html",
+      "title_he": "ברכות 18b"
+    },
+    {
+      "amud": "19a",
+      "file": "19a.html",
+      "title_he": "ברכות 19a"
+    },
+    {
+      "amud": "19b",
+      "file": "19b.html",
+      "title_he": "ברכות 19b"
+    },
+    {
+      "amud": "20a",
+      "file": "20a.html",
+      "title_he": "ברכות 20a"
+    },
+    {
+      "amud": "20b",
+      "file": "20b.html",
+      "title_he": "ברכות 20b"
+    },
+    {
+      "amud": "21a",
+      "file": "21a.html",
+      "title_he": "ברכות 21a"
+    },
+    {
+      "amud": "21b",
+      "file": "21b.html",
+      "title_he": "ברכות 21b"
+    },
+    {
+      "amud": "22a",
+      "file": "22a.html",
+      "title_he": "ברכות 22a"
+    },
+    {
+      "amud": "22b",
+      "file": "22b.html",
+      "title_he": "ברכות 22b"
+    },
+    {
+      "amud": "23a",
+      "file": "23a.html",
+      "title_he": "ברכות 23a"
+    },
+    {
+      "amud": "23b",
+      "file": "23b.html",
+      "title_he": "ברכות 23b"
+    },
+    {
+      "amud": "24a",
+      "file": "24a.html",
+      "title_he": "ברכות 24a"
+    },
+    {
+      "amud": "24b",
+      "file": "24b.html",
+      "title_he": "ברכות 24b"
+    },
+    {
+      "amud": "25a",
+      "file": "25a.html",
+      "title_he": "ברכות 25a"
+    },
+    {
+      "amud": "25b",
+      "file": "25b.html",
+      "title_he": "ברכות 25b"
+    },
+    {
+      "amud": "26a",
+      "file": "26a.html",
+      "title_he": "ברכות 26a"
+    },
+    {
+      "amud": "26b",
+      "file": "26b.html",
+      "title_he": "ברכות 26b"
+    },
+    {
+      "amud": "27a",
+      "file": "27a.html",
+      "title_he": "ברכות 27a"
+    },
+    {
+      "amud": "27b",
+      "file": "27b.html",
+      "title_he": "ברכות 27b"
+    },
+    {
+      "amud": "28a",
+      "file": "28a.html",
+      "title_he": "ברכות 28a"
+    },
+    {
+      "amud": "28b",
+      "file": "28b.html",
+      "title_he": "ברכות 28b"
+    },
+    {
+      "amud": "29a",
+      "file": "29a.html",
+      "title_he": "ברכות 29a"
+    },
+    {
+      "amud": "29b",
+      "file": "29b.html",
+      "title_he": "ברכות 29b"
+    },
+    {
+      "amud": "30a",
+      "file": "30a.html",
+      "title_he": "ברכות 30a"
+    },
+    {
+      "amud": "30b",
+      "file": "30b.html",
+      "title_he": "ברכות 30b"
+    },
+    {
+      "amud": "31a",
+      "file": "31a.html",
+      "title_he": "ברכות 31a"
+    },
+    {
+      "amud": "31b",
+      "file": "31b.html",
+      "title_he": "ברכות 31b"
+    },
+    {
+      "amud": "32a",
+      "file": "32a.html",
+      "title_he": "ברכות 32a"
+    },
+    {
+      "amud": "32b",
+      "file": "32b.html",
+      "title_he": "ברכות 32b"
+    },
+    {
+      "amud": "33a",
+      "file": "33a.html",
+      "title_he": "ברכות 33a"
+    },
+    {
+      "amud": "33b",
+      "file": "33b.html",
+      "title_he": "ברכות 33b"
+    },
+    {
+      "amud": "34a",
+      "file": "34a.html",
+      "title_he": "ברכות 34a"
+    },
+    {
+      "amud": "34b",
+      "file": "34b.html",
+      "title_he": "ברכות 34b"
+    },
+    {
+      "amud": "35a",
+      "file": "35a.html",
+      "title_he": "ברכות 35a"
+    },
+    {
+      "amud": "35b",
+      "file": "35b.html",
+      "title_he": "ברכות 35b"
+    },
+    {
+      "amud": "36a",
+      "file": "36a.html",
+      "title_he": "ברכות 36a"
+    },
+    {
+      "amud": "36b",
+      "file": "36b.html",
+      "title_he": "ברכות 36b"
+    },
+    {
+      "amud": "37a",
+      "file": "37a.html",
+      "title_he": "ברכות 37a"
+    },
+    {
+      "amud": "37b",
+      "file": "37b.html",
+      "title_he": "ברכות 37b"
+    },
+    {
+      "amud": "38a",
+      "file": "38a.html",
+      "title_he": "ברכות 38a"
+    },
+    {
+      "amud": "38b",
+      "file": "38b.html",
+      "title_he": "ברכות 38b"
+    },
+    {
+      "amud": "39a",
+      "file": "39a.html",
+      "title_he": "ברכות 39a"
+    },
+    {
+      "amud": "39b",
+      "file": "39b.html",
+      "title_he": "ברכות 39b"
+    },
+    {
+      "amud": "40a",
+      "file": "40a.html",
+      "title_he": "ברכות 40a"
+    },
+    {
+      "amud": "40b",
+      "file": "40b.html",
+      "title_he": "ברכות 40b"
+    },
+    {
+      "amud": "41a",
+      "file": "41a.html",
+      "title_he": "ברכות 41a"
+    },
+    {
+      "amud": "41b",
+      "file": "41b.html",
+      "title_he": "ברכות 41b"
+    },
+    {
+      "amud": "42a",
+      "file": "42a.html",
+      "title_he": "ברכות 42a"
+    },
+    {
+      "amud": "42b",
+      "file": "42b.html",
+      "title_he": "ברכות 42b"
+    },
+    {
+      "amud": "43a",
+      "file": "43a.html",
+      "title_he": "ברכות 43a"
+    },
+    {
+      "amud": "43b",
+      "file": "43b.html",
+      "title_he": "ברכות 43b"
+    },
+    {
+      "amud": "44a",
+      "file": "44a.html",
+      "title_he": "ברכות 44a"
+    },
+    {
+      "amud": "44b",
+      "file": "44b.html",
+      "title_he": "ברכות 44b"
+    },
+    {
+      "amud": "45a",
+      "file": "45a.html",
+      "title_he": "ברכות 45a"
+    },
+    {
+      "amud": "45b",
+      "file": "45b.html",
+      "title_he": "ברכות 45b"
+    },
+    {
+      "amud": "46a",
+      "file": "46a.html",
+      "title_he": "ברכות 46a"
+    },
+    {
+      "amud": "46b",
+      "file": "46b.html",
+      "title_he": "ברכות 46b"
+    },
+    {
+      "amud": "47a",
+      "file": "47a.html",
+      "title_he": "ברכות 47a"
+    },
+    {
+      "amud": "47b",
+      "file": "47b.html",
+      "title_he": "ברכות 47b"
+    },
+    {
+      "amud": "48a",
+      "file": "48a.html",
+      "title_he": "ברכות 48a"
+    },
+    {
+      "amud": "48b",
+      "file": "48b.html",
+      "title_he": "ברכות 48b"
+    },
+    {
+      "amud": "49a",
+      "file": "49a.html",
+      "title_he": "ברכות 49a"
+    },
+    {
+      "amud": "49b",
+      "file": "49b.html",
+      "title_he": "ברכות 49b"
+    },
+    {
+      "amud": "50a",
+      "file": "50a.html",
+      "title_he": "ברכות 50a"
+    },
+    {
+      "amud": "50b",
+      "file": "50b.html",
+      "title_he": "ברכות 50b"
+    },
+    {
+      "amud": "51a",
+      "file": "51a.html",
+      "title_he": "ברכות 51a"
+    },
+    {
+      "amud": "51b",
+      "file": "51b.html",
+      "title_he": "ברכות 51b"
+    },
+    {
+      "amud": "52a",
+      "file": "52a.html",
+      "title_he": "ברכות 52a"
+    },
+    {
+      "amud": "52b",
+      "file": "52b.html",
+      "title_he": "ברכות 52b"
+    },
+    {
+      "amud": "53a",
+      "file": "53a.html",
+      "title_he": "ברכות 53a"
+    },
+    {
+      "amud": "53b",
+      "file": "53b.html",
+      "title_he": "ברכות 53b"
+    },
+    {
+      "amud": "54a",
+      "file": "54a.html",
+      "title_he": "ברכות 54a"
+    },
+    {
+      "amud": "54b",
+      "file": "54b.html",
+      "title_he": "ברכות 54b"
+    },
+    {
+      "amud": "55a",
+      "file": "55a.html",
+      "title_he": "ברכות 55a"
+    },
+    {
+      "amud": "55b",
+      "file": "55b.html",
+      "title_he": "ברכות 55b"
+    },
+    {
+      "amud": "56a",
+      "file": "56a.html",
+      "title_he": "ברכות 56a"
+    },
+    {
+      "amud": "56b",
+      "file": "56b.html",
+      "title_he": "ברכות 56b"
+    },
+    {
+      "amud": "57a",
+      "file": "57a.html",
+      "title_he": "ברכות 57a"
+    },
+    {
+      "amud": "57b",
+      "file": "57b.html",
+      "title_he": "ברכות 57b"
+    },
+    {
+      "amud": "58a",
+      "file": "58a.html",
+      "title_he": "ברכות 58a"
+    },
+    {
+      "amud": "58b",
+      "file": "58b.html",
+      "title_he": "ברכות 58b"
+    },
+    {
+      "amud": "59a",
+      "file": "59a.html",
+      "title_he": "ברכות 59a"
+    },
+    {
+      "amud": "59b",
+      "file": "59b.html",
+      "title_he": "ברכות 59b"
+    },
+    {
+      "amud": "60a",
+      "file": "60a.html",
+      "title_he": "ברכות 60a"
+    },
+    {
+      "amud": "60b",
+      "file": "60b.html",
+      "title_he": "ברכות 60b"
+    },
+    {
+      "amud": "61a",
+      "file": "61a.html",
+      "title_he": "ברכות 61a"
+    },
+    {
+      "amud": "61b",
+      "file": "61b.html",
+      "title_he": "ברכות 61b"
+    },
+    {
+      "amud": "62a",
+      "file": "62a.html",
+      "title_he": "ברכות 62a"
+    },
+    {
+      "amud": "62b",
+      "file": "62b.html",
+      "title_he": "ברכות 62b"
+    },
+    {
+      "amud": "63a",
+      "file": "63a.html",
+      "title_he": "ברכות 63a"
+    },
+    {
+      "amud": "63b",
+      "file": "63b.html",
+      "title_he": "ברכות 63b"
+    },
+    {
+      "amud": "64a",
+      "file": "64a.html",
+      "title_he": "ברכות 64a"
+    }
+  ]
+}
