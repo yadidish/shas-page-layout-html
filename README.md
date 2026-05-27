@@ -15,4 +15,6 @@ Public static HTML export of ready Tzurat HaDaf pages.
 - Berakhot: `2a` through `64a`, 125 amudim.
 
 The repository is intended to grow to all Shas while keeping the same folder
-layout. Bundled fonts must be open-license fonts only.
+layout. Bundled fonts must be open-license fonts only. Bundled open fonts
+currently include Noto Serif Hebrew and Noto Rashi Hebrew, both under SIL OFL
+1.1.
