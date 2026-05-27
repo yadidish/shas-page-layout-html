@@ -1,18 +1,18 @@
-# Shas Tzurat HaDaf HTML
+# Shas Page Layout HTML
 
-Public static HTML export of ready Tzurat HaDaf pages.
+Public static HTML export of ready page-layout pages.
 
 ## Structure
 
-- `index.html` - top-level masechet index.
-- `masechtot/<masechet>/index.html` - index for one masechet.
-- `masechtot/<masechet>/<amud>.html` - rendered daf/amud page.
+- `index.html` - top-level tractate index.
+- `tractate/<tractate>/index.html` - index for one tractate.
+- `tractate/<tractate>/<page>.html` - rendered page-layout page.
 - `assets/fonts/noto/` - open fonts required by the HTML pages.
 - `manifest.json` - machine-readable list of included pages.
 
 ## Current Contents
 
-- Berakhot: `2a` through `64a`, 125 amudim.
+- Berakhot: `2a` through `64a`, 125 pages.
 
 The repository is intended to grow to all Shas while keeping the same folder
 layout. Bundled fonts must be open-license fonts only. Bundled open fonts

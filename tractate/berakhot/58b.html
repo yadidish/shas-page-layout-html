@@ -1,0 +1,180 @@
+<!doctype html><html lang='he' dir='rtl'><head><meta charset='utf-8'><title>Berakhot 58b</title><style>
+@font-face{font-family:OpenHebrewSerif;src:url('../../assets/fonts/noto/NotoSerifHebrew-VariableFont_wdth,wght.ttf') format('truetype');font-weight:100 900;font-style:normal}
+@font-face{font-family:OpenRashiHebrew;src:url('../../assets/fonts/noto/NotoRashiHebrew[wght].ttf') format('truetype');font-weight:100 900;font-style:normal}
+html,body{margin:0;padding:0;background:#eee;font-family:Arial,Helvetica,sans-serif;overflow:hidden}
+.page{position:relative;width:643.58px;height:992.58px;margin:0;background:white;border:1px solid #111;box-sizing:border-box;overflow:hidden}
+/* Vilna print header strip — each OCR line is absolutely positioned at its
+   PDF bbox so the HTML reproduces the print layout exactly: the large
+   center title ("מאימתי פרק ראשון ברכות"), the page number ("י:") right of
+   center, the corner marginal labels ("עין משפט / נר מצוה", "מסורת הש״ס").
+   Font size = polygon height so each piece matches print scale. */
+.page-header-line{position:absolute;font-family:OpenHebrewSerif,serif;font-weight:700;color:#111;white-space:nowrap;line-height:1;z-index:6;user-select:text}
+.page-header-fallback{position:absolute;top:4px;left:0;right:0;text-align:center;direction:rtl;font-family:OpenHebrewSerif,serif;font-size:22px;font-weight:700;color:#111;letter-spacing:0.5px;pointer-events:none;z-index:6;line-height:1.1}
+.page-header-fallback .sep{margin:0 8px;color:#666}
+/* No vertical padding: when chained slabs of the same stream overlap, the
+   pad-top of slab i+1 used to cover the bottom ~1.5 px of slab i's last
+   text line. With padding:0 on the y-axis, slab i+1 starts exactly at its
+   top with text — no chrome to hide the previous line. Horizontal padding
+   stays so text doesn't kiss the gutter edges. */
+.text-slab{position:absolute;box-sizing:border-box;overflow:hidden;direction:rtl;text-align:justify;padding:0 2px;background:white;z-index:1}
+.text-slab:after{content:'';display:inline-block;width:100%}
+.white-gutter{position:absolute;box-sizing:border-box;background:white;z-index:5;pointer-events:none}
+.gemara{font-weight:400}
+.chavrusa-gemara{background:transparent;box-decoration-break:clone;-webkit-box-decoration-break:clone;border-radius:3px;outline:1.3px solid transparent;outline-offset:1px;transition:background-color .08s,outline-color .08s}
+.chavrusa-gemara.is-active{background:rgba(255,214,51,.42);outline-color:#b58100}
+.rashi-dh{border-radius:3px;outline:1.2px solid transparent;outline-offset:1px;transition:background-color .08s,outline-color .08s}
+.rashi-dh.is-rashi-match{background:rgba(86,156,214,.25);outline-color:#1269d3}
+/* Rashi/Tosafot body — slightly heavier than the bare TTF outlines so the
+   commentary script reads with the right print weight. A small text-stroke
+   thickens the strokes without changing glyph metrics (advance widths stay
+   the same, so the Pillow line-wrap simulator stays accurate). */
+.rashi,.tosafot{-webkit-text-stroke:0.15px currentColor;text-stroke:0.15px currentColor}
+/* Rashi dibur hamatchil: heavy stroke at the body size — no 1.5× scaling. */
+.rashi b{font-weight:900;-webkit-text-stroke:0.45px currentColor;text-stroke:0.45px currentColor}
+/* Tosafot: every dibur starts a new visual paragraph. Only the second visual
+   line gets the Vilna inset; later lines return to the normal block edge. */
+.tosafot-entry{display:block;text-align:justify;text-align-last:center}
+.tos-word{display:inline}
+.tos-second-line-indent{margin-right:1.8em}
+.tosafot-dh{font-weight:900;-webkit-text-stroke:0.45px currentColor;text-stroke:0.45px currentColor}
+.tosafot-dh .tos-first{font-size:1.5em;line-height:1}
+.missing-text{color:#666;text-align:center;text-align-last:center;-webkit-text-stroke:0;text-stroke:0}
+</style></head><body>
+<div class='page' data-page='58b' data-layout-source='berakhot_layoutocr_azure_f0_shapes' data-text-source='hebrewbooks'><span class='page-header-line' style='left:227.22px;top:10.41px;font-size:23.85px;font-weight:400'>הרואה פרק תשיעי ברכות</span><span class='page-header-line' style='left:525.58px;top:14.74px;font-size:14.24px'>נח:</span><div class='text-slab rashi' data-kind='rashi' data-render-kind='rashi' data-slab='1' data-words='314' style='left:121.06px;top:76.53px;width:118.41px;height:584.12px;font-family:OpenRashiHebrew, serif;font-size:7.70px;line-height:11.165px;color:#111'><span class='rashi-dh'><b>ברוך</b> <b>מציב</b> <b>גבול</b> <b>אלמנה.</b></span> כגון בישוב בית שני: <span class='rashi-dh'><b>אמאי.</b></span> קא מתנחת: <span class='rashi-dh'><b>נפל</b> <b>ליה</b> <b>בתלא.</b></span> שנפל לו ונעשה תל: <span class='rashi-dh'><b>דיו</b> <b>לעבד</b> <b>שיהא</b> <b>כרבו.</b></span> שהרי בית המקדש חרב שהוא ביתו של הקב&quot;ה: <span class='rashi-dh'><b>ככלי</b> <b>אובד.</b></span> וסתם כלי לאחר י&quot;ב חדש משתכח מן הלב דיאוש בעלים לאחר י&quot;ב חדש בפרק אלו מציאות (ד&#x27; כח.) מי שמצא כלי או שום מציאה חייב להכריז שלש רגלים ואם נמצא אחר הסוכות צריך להמתין ולהכריז בפסח ובעצרת ובחג דהיינו י&quot;ב חדש ושוב אין צריך להכריז: <span class='rashi-dh'><b>אשר</b> <b>חלק</b> <b>ושהחיינו.</b></span> דלאחר שלשים יום הוה: <span class='rashi-dh'><b>מחכמתו</b> <b>ליראיו.</b></span> כרב חנינא דחכים טפי: <span class='rashi-dh'><b>בהקנים.</b></span> לינטייליו&quot;ש כעדשים: <span class='rashi-dh'><b>כושי.</b></span> שחור הרבה: <span class='rashi-dh'><b>גיחור.</b></span> אדום הרבה רו&quot;ש בלעז: <span class='rashi-dh'><b>לווקן.</b></span> לבן יותר מדאי: <span class='rashi-dh'><b>קפח.</b></span> בטן גדול מתוך עוביו נראית קומתו מקופחת לשון אחר קפח ארוך הרבה ופרצופו שמוט ובולט דמכוער הוי: <span class='rashi-dh'><b>הדרניקוס.</b></span> רודא&quot;ש לשון אחר פיו עקום: <span class='rashi-dh'><b>פתויי</b> <b>ראש.</b></span> ששערו כנמטא כל שערו דבוק זה בזה פלטדי&quot;ר בלעז: <span class='rashi-dh'><b>אומר</b> <b>ברוך</b> <b>משנה</b> <b>את</b> <b>הבריות.</b></span> דממעי אמן הוו: <span class='rashi-dh'><b>קטע.</b></span> שנקטעו ידיו הכא הוא דקטע משמע דידים הוא משום דקתני תרתי קטע וחגר אבל היכא דקתני קטע לחוד משמע דרגלים כדתנן (שבת פ&quot;ו ד&#x27; סה:) הקטע יוצא בקב שלו: <span class='rashi-dh'><b>היכא</b> <b>דאיתרע</b> <b>ליה</b> <b>בתר</b> <b>דאתיליד.</b></span> לאחר שנולד נולדו בו: <span class='rashi-dh'><b>אומר</b> <b>ברוך</b> <b>דיין</b> <b>האמת.</b></span> דומיא דקטע וקטע בתר דאתיליד הוא: <span class='rashi-dh'><b>קפוף.</b></span> עוף שקורין וולטי&quot;ר ויש לו לסתות ולחיים כאדם: <span class='rashi-dh'><b>כוכבא</b> <b>דשביט.</b></span> כוכב היורד כחץ ברקיע ממקום למקום וארוך כשבט שהוא יורה ונראה כמו שפותח רקיע: <span class='rashi-dh'><b>וגמירי</b> <b>דלא</b> <b>עבר</b> <b>כסלא.</b></span> שאינו מעביר מזל כסיל כשהוא שביט: <span class='rashi-dh'><b>כסלא.</b></span> כסיל: <span class='rashi-dh'><b>רב</b> <b>הונא</b> <b>אמר.</b></span> מאי זיקין וילון הוא דמקרע ומתחזי רקיע דרך הקריעה כרומח: <span class='rashi-dh'><b>כתיב</b> <b>עושה</b> <b>עש</b> <b>כסיל</b> <b>וכימה.</b></span> דקדמיה ליה כסיל לכימה: <span class='rashi-dh'><b>הא</b> <b>כיצד.</b></span> מלמד ששניהן שוין: <span class='rashi-dh'><b>שאלמלא</b> <b>חמה</b> <b>של</b> <b>כסיל</b> <b>וכו&#x27;.</b></span> כסיל שולט בימות החמה להכי אקדמיה קרא כימה שולט בימות הגשמים ולהכי אקדמיה קרא: <span class='rashi-dh'><b>עקרב.</b></span> היינו כימה וממזל טלה הוא: <span class='rashi-dh'><b>נהר</b> <b>דינור.</b></span> מתשת כחו של עקרב: <span class='rashi-dh'><b>עוקצא</b> <b>דעקרבא.</b></span> זנב העקרב: <span class='rashi-dh'><b>מעדנות</b> <b>כימה.</b></span> קשרים של כימה: <span class='rashi-dh'><b>כמאה</b> <b>ככבי.</b></span> יש בין הכוכבים של כימה שהן כחה של כימה: <span class='rashi-dh'><b>אמרי</b> <b>לה</b></span></div><div class='text-slab rashi' data-kind='rashi' data-render-kind='rashi' data-slab='2' data-words='63' style='left:120.95px;top:645.94px;width:434.93px;height:44.66px;font-family:OpenRashiHebrew, serif;font-size:7.70px;line-height:11.165px;color:#111'><span class='rashi-dh'><b>דמכנפי.</b></span> אותן שהן כחה של כימה ואמרי לה דמבדרן: <span class='rashi-dh'><b>יותא</b> <b>אמרי</b> <b>לה.</b></span> דקיימא בזנב טלה ואמרי לה דקיימא בריש עגלא: <span class='rashi-dh'><b>רישא</b> <b>דעגלא.</b></span> ראשו של עגל והיינו מזל שור והוא נמשך אחר מזל טלה ראש השור סמוך לזנב טלה שכן הסדר טלה שור תאומים: <span class='rashi-dh'><b>ומסתברא</b> <b>כמאן</b> <b>דאמר</b> <b>זנב.</b></span> היינו כוכבים העשויין כזנב מדכתיב ועיש על בניה תנחם: <span class='rashi-dh'><b>אלמא</b> <b>חסרה.</b></span> והאי זנב מחזי כטרפא דטריף:</div><div class='text-slab rashi catchword' data-kind='rashi' data-render-kind='rashi' style='left:120.95px;top:679.44px;width:434.93px;height:12.16px;font-family:OpenRashiHebrew, serif;padding-left:20px;font-size:7.70px;line-height:11.165px;color:#111;text-align:left'>כטרפא</div><div class='text-slab tosafot' data-kind='tosafot' data-render-kind='tosafot' data-slab='1' data-words='51' style='left:121.06px;top:33.00px;width:434.79px;height:57.32px;font-family:OpenRashiHebrew, serif;font-size:7.70px;line-height:11.165px;color:#111'><span class='tosafot-entry'><span class='tosafot-dh'><b class='tos-word tos-first'>הרואה</b> <b class='tos-word'>חבירו</b> <b class='tos-word'>אחר</b> <b class='tos-word'>שלשים</b> <b class='tos-word'>יום</b> <b class='tos-word'>אומר</b> <b class='tos-word'>שהחיינו.</b></span> <span class='tos-word'>אומר</span> <span class='tos-word'>ר&quot;י</span> <span class='tos-word'>דוקא</span> <span class='tos-word'>חבירו</span> <span class='tos-word'>החביב</span> <span class='tos-word'>עליו</span> <span class='tos-word'>אבל</span> <span class='tos-word'>בענין</span> <span class='tos-word'>אחר</span> <span class='tos-word'>לא:</span></span> <span class='tosafot-entry'><span class='tosafot-dh'><b class='tos-word tos-first'>וילון</b> <b class='tos-word'>הוא</b> <b class='tos-word'>דמקרע</b> <b class='tos-word'>ומחזי</b> <b class='tos-word'>נהורא</b> <b class='tos-word'>ברקיע.</b></span> <span class='tos-word'>לפי</span> <span class='tos-word'>הענין</span> <span class='tos-word'>משמע</span> <span class='tos-word'>דבא</span> <span class='tos-word'>רב</span> <span class='tos-word'>הונא</span> <span class='tos-word'>לתרץ</span> <span class='tos-word'>דלא</span> <span class='tos-word'>עבר</span> <span class='tos-word'>כסלא</span> <span class='tos-word'>ולא</span> <span class='tos-word'>קאי</span> <span class='tos-word'>אמתניתין</span> <span class='tos-word'>לפרושי</span> <span class='tos-word'>מאי</span> <span class='tos-word'>זיקין</span> <span class='tos-word'>דהא</span> <span class='tos-word'>רב</span> <span class='tos-word'>אשי</span> <span class='tos-word'>דבתריה</span> <span class='tos-word'>קאי</span> <span class='tos-word'>אשנויא</span> <span class='tos-word'>דלא</span> <span class='tos-word'>עבר</span> <span class='tos-word'>כסלא</span> <span class='tos-word'>ודלא</span> <span class='tos-word'>כפירוש</span> <span class='tos-word'>רש&quot;י:</span></span></div><div class='text-slab gemara' data-kind='gemara' data-render-kind='gemara' data-slab='1' data-words='71' style='left:252.47px;top:90.32px;width:171.40px;height:129.76px;font-family:OpenHebrewSerif, serif;font-size:9.50px;line-height:12.350px;color:#111'>ת&quot;ר הרואה בתי <span class='chavrusa-gemara' data-chavrusa-idx='0' tabindex='-1'>ישראל</span> בישובן <span class='chavrusa-gemara' data-chavrusa-idx='1' tabindex='-1'>אומר ברוך מציב גבול אלמנה</span> <span class='chavrusa-gemara' data-chavrusa-idx='2' tabindex='-1'>בחורבנן אומר ברוך דיין האמת</span> <span class='chavrusa-gemara' data-chavrusa-idx='3' tabindex='-1'>בתי עובדי כוכבים בישובן אומר בית גאים יסח ה&#x27;</span> בחורבנן אומר <span class='chavrusa-gemara' data-chavrusa-idx='4' tabindex='-1'>אל נקמות ה&#x27;</span> אל נקמות הופיע <span class='chavrusa-gemara' data-chavrusa-idx='5' tabindex='-1'>עולא ורב חסדא הוו קא אזלי באורחא כי מטו אפתחא דבי רב חנא בר חנילאי</span> <span class='chavrusa-gemara' data-chavrusa-idx='6' tabindex='-1'>נגד רב חסדא ואתנח</span> <span class='chavrusa-gemara' data-chavrusa-idx='7' tabindex='-1'>אמר ליה עולא אמאי קא מתנחת</span> <span class='chavrusa-gemara' data-chavrusa-idx='8' tabindex='-1'>והאמר רב אנחה שוברת חצי גופו של אדם שנאמר ואתה בן אדם האנח בשברון</span></div><div class='text-slab gemara' data-kind='gemara' data-render-kind='gemara' data-slab='2' data-words='583' style='left:252.47px;top:201.47px;width:303.05px;height:572.51px;font-family:OpenHebrewSerif, serif;font-size:9.50px;line-height:12.350px;color:#111'><span class='chavrusa-gemara' data-chavrusa-idx='8' tabindex='-1'>מתנים וגו&#x27;</span> ור&#x27; <span class='chavrusa-gemara' data-chavrusa-idx='9' tabindex='-1'>יוחנן</span> אמר <span class='chavrusa-gemara' data-chavrusa-idx='10' tabindex='-1'>אף כל</span> גופו של <span class='chavrusa-gemara' data-chavrusa-idx='11' tabindex='-1'>אדם</span> שנאמר <span class='chavrusa-gemara' data-chavrusa-idx='12' tabindex='-1'>והיה</span> כי יאמרו אליך על <span class='chavrusa-gemara' data-chavrusa-idx='13' tabindex='-1'>מה</span> <span class='chavrusa-gemara' data-chavrusa-idx='14' tabindex='-1'>אתה</span> נאנח ואמרת אל שמועה [כי באה] ונמס <span class='chavrusa-gemara' data-chavrusa-idx='15' tabindex='-1'>כל</span> לב <span class='chavrusa-gemara' data-chavrusa-idx='16' tabindex='-1'>וגו&#x27;</span> א&quot;ל <span class='chavrusa-gemara' data-chavrusa-idx='17' tabindex='-1'>היכי לא אתנח</span> <span class='chavrusa-gemara' data-chavrusa-idx='18' tabindex='-1'>ביתא</span> <span class='chavrusa-gemara' data-chavrusa-idx='19' tabindex='-1'>דהוו בה שיתין אפייתא</span> <span class='chavrusa-gemara' data-chavrusa-idx='20' tabindex='-1'>ביממא ושיתין אפייתא בליליא ואפיין לכל מאן דצריך</span> <span class='chavrusa-gemara' data-chavrusa-idx='21' tabindex='-1'>ולא שקל</span> <span class='chavrusa-gemara' data-chavrusa-idx='22' tabindex='-1'>ידא מן כיסא</span> <span class='chavrusa-gemara' data-chavrusa-idx='23' tabindex='-1'>דסבר דילמא אתי עני בר טובים</span> <span class='chavrusa-gemara' data-chavrusa-idx='24' tabindex='-1'>ואדמטו ליה</span> <span class='chavrusa-gemara' data-chavrusa-idx='25' tabindex='-1'>לכיסא</span> <span class='chavrusa-gemara' data-chavrusa-idx='26' tabindex='-1'>קא מכסיף</span> <span class='chavrusa-gemara' data-chavrusa-idx='27' tabindex='-1'>ותו הוו פתיחין ליה</span> <span class='chavrusa-gemara' data-chavrusa-idx='28' tabindex='-1'>ארבע בבי</span> <span class='chavrusa-gemara' data-chavrusa-idx='29' tabindex='-1'>לארבע רוחתא דעלמא וכל</span> <span class='chavrusa-gemara' data-chavrusa-idx='30' tabindex='-1'>דהוה עייל</span> כפין <span class='chavrusa-gemara' data-chavrusa-idx='31' tabindex='-1'>נפיק</span> כי <span class='chavrusa-gemara' data-chavrusa-idx='32' tabindex='-1'>שבע</span> והוו שדו ליה <span class='chavrusa-gemara' data-chavrusa-idx='33' tabindex='-1'>חטי ושערי בשני בצורת אבראי</span> <span class='chavrusa-gemara' data-chavrusa-idx='34' tabindex='-1'>דכל מאן דכסיפא</span> <span class='chavrusa-gemara' data-chavrusa-idx='35' tabindex='-1'>מילתא למשקל</span> <span class='chavrusa-gemara' data-chavrusa-idx='36' tabindex='-1'>ביממא</span> <span class='chavrusa-gemara' data-chavrusa-idx='37' tabindex='-1'>אתי</span> ושקיל בליליא <span class='chavrusa-gemara' data-chavrusa-idx='38' tabindex='-1'>השתא</span> <span class='chavrusa-gemara' data-chavrusa-idx='39' tabindex='-1'>נפל</span> <span class='chavrusa-gemara' data-chavrusa-idx='40' tabindex='-1'>בתלא</span> <span class='chavrusa-gemara' data-chavrusa-idx='41' tabindex='-1'>ולא</span> אתנח <span class='chavrusa-gemara' data-chavrusa-idx='42' tabindex='-1'>אמר ליה</span> <span class='chavrusa-gemara' data-chavrusa-idx='43' tabindex='-1'>הכי</span> אמר <span class='chavrusa-gemara' data-chavrusa-idx='44' tabindex='-1'>ר&#x27;</span> <span class='chavrusa-gemara' data-chavrusa-idx='45' tabindex='-1'>יוחנן</span> מיום שחרב <span class='chavrusa-gemara' data-chavrusa-idx='46' tabindex='-1'>בית המקדש</span> נגזרה גזירה על בתיהן של צדיקים שיחרבו שנאמר באזני <span class='chavrusa-gemara' data-chavrusa-idx='47' tabindex='-1'>ה&#x27;</span> צבאות <span class='chavrusa-gemara' data-chavrusa-idx='48' tabindex='-1'>אם</span> לא בתים רבים לשמה יהיו גדולים וטובים מאין יושב <span class='chavrusa-gemara' data-chavrusa-idx='49' tabindex='-1'>ואמר</span> <span class='chavrusa-gemara' data-chavrusa-idx='50' tabindex='-1'>ר&#x27;</span> <span class='chavrusa-gemara' data-chavrusa-idx='51' tabindex='-1'>יוחנן</span> עתיד <span class='chavrusa-gemara' data-chavrusa-idx='52' tabindex='-1'>הקדוש ברוך הוא</span> להחזירן לישובן שנאמר שיר המעלות <span class='chavrusa-gemara' data-chavrusa-idx='53' tabindex='-1'>לדוד</span> הבוטחים ביי&#x27; <span class='chavrusa-gemara' data-chavrusa-idx='54' tabindex='-1'>כהר ציון</span> <span class='chavrusa-gemara' data-chavrusa-idx='55' tabindex='-1'>מה</span> הר ציון עתיד <span class='chavrusa-gemara' data-chavrusa-idx='56' tabindex='-1'>הקדוש ברוך הוא</span> להחזירו לישובו <span class='chavrusa-gemara' data-chavrusa-idx='57' tabindex='-1'>אף</span> בתיהן של צדיקים עתיד הקב&quot;ה להחזירן לישובן <span class='chavrusa-gemara' data-chavrusa-idx='58' tabindex='-1'>חזייה</span> דלא מיישב דעתיה א&quot;ל דיו לעבד שיהא כרבו ת&quot;ר הרואה קברי <span class='chavrusa-gemara' data-chavrusa-idx='59' tabindex='-1'>ישראל</span> <span class='chavrusa-gemara' data-chavrusa-idx='60' tabindex='-1'>אומר ברוך</span> אשר יצר אתכם בדין וזן אתכם בדין וכלכל אתכם בדין ואסף אתכם בדין ועתיד להקימכם בדין <span class='chavrusa-gemara' data-chavrusa-idx='61' tabindex='-1'>מר בריה דרבינא</span> <span class='chavrusa-gemara' data-chavrusa-idx='62' tabindex='-1'>מסיים בה</span> משמיה דרב נחמן א] ויודע מספר כולכם <span class='chavrusa-gemara' data-chavrusa-idx='63' tabindex='-1'>ב]</span> <span class='chavrusa-gemara' data-chavrusa-idx='64' tabindex='-1'>והוא</span> עתיד להחיותכם ולקיים אתכם ברוך מחיה <span class='chavrusa-gemara' data-chavrusa-idx='65' tabindex='-1'>המתים</span> <span class='chavrusa-gemara' data-chavrusa-idx='66' tabindex='-1'>קברי עובדי כוכבים אומר בושה אמכם</span> <span class='chavrusa-gemara' data-chavrusa-idx='67' tabindex='-1'>וגו&#x27;</span> אמר ריב&quot;ל הרואה את <span class='chavrusa-gemara' data-chavrusa-idx='68' tabindex='-1'>חבירו</span> <span class='chavrusa-gemara' data-chavrusa-idx='69' tabindex='-1'>לאחר</span> <span class='chavrusa-gemara' data-chavrusa-idx='70' tabindex='-1'>שלשים יום</span> <span class='chavrusa-gemara' data-chavrusa-idx='71' tabindex='-1'>אומר ברוך שהחיינו וקיימנו והגיענו לזמן הזה</span> <span class='chavrusa-gemara' data-chavrusa-idx='72' tabindex='-1'>לאחר</span> י&quot;ב חדש <span class='chavrusa-gemara' data-chavrusa-idx='73' tabindex='-1'>אומר ברוך מחיה המתים</span> <span class='chavrusa-gemara' data-chavrusa-idx='74' tabindex='-1'>אמר רב אין המת משתכח מן הלב אלא לאחר שנים עשר חדש שנאמר נשכחתי כמת מלב הייתי ככלי אובד</span> <span class='chavrusa-gemara' data-chavrusa-idx='75' tabindex='-1'>רב פפא ורב הונא בריה דרב יהושע הוו קאזלי באורחא פגעו ביה ברב חנינא בריה דרב איקא אמרו ליה בהדי דחזינך</span> בריכינן <span class='chavrusa-gemara' data-chavrusa-idx='76' tabindex='-1'>עלך</span> <span class='chavrusa-gemara' data-chavrusa-idx='77' tabindex='-1'>תרתי</span> <span class='chavrusa-gemara' data-chavrusa-idx='78' tabindex='-1'>ברוך אשר חלק מחכמתו ליראיו</span> ושהחיינו <span class='chavrusa-gemara' data-chavrusa-idx='79' tabindex='-1'>אמר להו אנא</span> <span class='chavrusa-gemara' data-chavrusa-idx='80' tabindex='-1'>נמי</span> <span class='chavrusa-gemara' data-chavrusa-idx='81' tabindex='-1'>כיון</span> דחזתינכו חשבתינכו עלואי <span class='chavrusa-gemara' data-chavrusa-idx='82' tabindex='-1'>כשיתין רבוון בית ישראל וברכינא עלייכו תלתא</span> <span class='chavrusa-gemara' data-chavrusa-idx='83' tabindex='-1'>הנך תרתי</span> וברוך חכם הרזים <span class='chavrusa-gemara' data-chavrusa-idx='84' tabindex='-1'>אמרו ליה חכימת כולי האי</span> <span class='chavrusa-gemara' data-chavrusa-idx='85' tabindex='-1'>יהבי ביה עינייהו</span> ושכיב אמר ריב&quot;ל הרואה את הבהקנים <span class='chavrusa-gemara' data-chavrusa-idx='86' tabindex='-1'>אומר ברוך משנה הבריות</span> <span class='chavrusa-gemara' data-chavrusa-idx='87' tabindex='-1'>מיתיבי ראה את הכושי ואת הגיחור</span> <span class='chavrusa-gemara' data-chavrusa-idx='88' tabindex='-1'>ואת הלווקן</span> <span class='chavrusa-gemara' data-chavrusa-idx='89' tabindex='-1'>ואת הקפח</span> <span class='chavrusa-gemara' data-chavrusa-idx='90' tabindex='-1'>ואת הננס ואת הדרניקוס</span> <span class='chavrusa-gemara' data-chavrusa-idx='91' tabindex='-1'>אומר ברוך</span> משנה את הבריות <span class='chavrusa-gemara' data-chavrusa-idx='92' tabindex='-1'>את הקטע</span> <span class='chavrusa-gemara' data-chavrusa-idx='93' tabindex='-1'>ואת הסומא ואת פתויי הראש</span> <span class='chavrusa-gemara' data-chavrusa-idx='94' tabindex='-1'>ואת החגר</span> ואת המוכה שחין ואת הבהקנים <span class='chavrusa-gemara' data-chavrusa-idx='95' tabindex='-1'>אומר ברוך</span> דיין אמת ל&quot;ק <span class='chavrusa-gemara' data-chavrusa-idx='96' tabindex='-1'>הא</span> <span class='chavrusa-gemara' data-chavrusa-idx='97' tabindex='-1'>ממעי אמו</span> <span class='chavrusa-gemara' data-chavrusa-idx='98' tabindex='-1'>הא</span> <span class='chavrusa-gemara' data-chavrusa-idx='99' tabindex='-1'>בתר דאיתיליד</span> <span class='chavrusa-gemara' data-chavrusa-idx='100' tabindex='-1'>דיקא נמי</span> <span class='chavrusa-gemara' data-chavrusa-idx='101' tabindex='-1'>דקתני</span> דומיא דקטע <span class='chavrusa-gemara' data-chavrusa-idx='102' tabindex='-1'>שמע מינה</span> ת&quot;ר הרואה פיל <span class='chavrusa-gemara' data-chavrusa-idx='103' tabindex='-1'>קוף</span> וקפוף <span class='chavrusa-gemara' data-chavrusa-idx='104' tabindex='-1'>אומר ברוך</span> משנה את הבריות <span class='chavrusa-gemara' data-chavrusa-idx='105' tabindex='-1'>ראה בריות טובות ואילנות טובות אומר ברוך שככה לו בעולמו:</span> <span class='chavrusa-gemara' data-chavrusa-idx='106' tabindex='-1'>על הזיקין:</span> <span class='chavrusa-gemara' data-chavrusa-idx='107' tabindex='-1'>מאי זיקין</span> <span class='chavrusa-gemara' data-chavrusa-idx='108' tabindex='-1'>אמר שמואל כוכבא דשביט</span> <span class='chavrusa-gemara' data-chavrusa-idx='109' tabindex='-1'>ואמר שמואל נהירין לי שבילי דשמיא כשבילי דנהרדעא</span> <span class='chavrusa-gemara' data-chavrusa-idx='110' tabindex='-1'>לבר מכוכבא דשביט דלא ידענא מאי ניהו</span> וגמירי דלא <span class='chavrusa-gemara' data-chavrusa-idx='111' tabindex='-1'>עבר</span> <span class='chavrusa-gemara' data-chavrusa-idx='112' tabindex='-1'>כסלא</span> <span class='chavrusa-gemara' data-chavrusa-idx='113' tabindex='-1'>ואי</span> <span class='chavrusa-gemara' data-chavrusa-idx='114' tabindex='-1'>עבר</span> <span class='chavrusa-gemara' data-chavrusa-idx='115' tabindex='-1'>כסלא חרב עלמא</span> <span class='chavrusa-gemara' data-chavrusa-idx='116' tabindex='-1'>והא קא חזינן דעבר</span> <span class='chavrusa-gemara' data-chavrusa-idx='117' tabindex='-1'>זיויה</span> <span class='chavrusa-gemara' data-chavrusa-idx='118' tabindex='-1'>הוא דעבר</span> ומתחזי כדעבר <span class='chavrusa-gemara' data-chavrusa-idx='119' tabindex='-1'>איהו</span> <span class='chavrusa-gemara' data-chavrusa-idx='120' tabindex='-1'>רב הונא</span> ברי&#x27; דרב יהושע אמר <span class='chavrusa-gemara' data-chavrusa-idx='121' tabindex='-1'>וילון הוא דמקרע</span> <span class='chavrusa-gemara' data-chavrusa-idx='122' tabindex='-1'>דמגלגל</span> <span class='chavrusa-gemara' data-chavrusa-idx='123' tabindex='-1'>ומחזי נהורא דרקיעא</span> <span class='chavrusa-gemara' data-chavrusa-idx='124' tabindex='-1'>רב אשי אמר</span> <span class='chavrusa-gemara' data-chavrusa-idx='125' tabindex='-1'>כוכבא הוא דעקר</span> <span class='chavrusa-gemara' data-chavrusa-idx='126' tabindex='-1'>מהאי גיסא דכסלא וחזי ליה חבריה</span> <span class='chavrusa-gemara' data-chavrusa-idx='127' tabindex='-1'>מהך גיסא</span> <span class='chavrusa-gemara' data-chavrusa-idx='128' tabindex='-1'>ומיבעית</span> <span class='chavrusa-gemara' data-chavrusa-idx='129' tabindex='-1'>ומחזי</span> <span class='chavrusa-gemara' data-chavrusa-idx='130' tabindex='-1'>כמאן</span> דעבר <span class='chavrusa-gemara' data-chavrusa-idx='131' tabindex='-1'>שמואל רמי כתיב עושה עש כסיל וכימה</span> <span class='chavrusa-gemara' data-chavrusa-idx='132' tabindex='-1'>וכתיב עושה כימה וכסיל</span> <span class='chavrusa-gemara' data-chavrusa-idx='133' tabindex='-1'>הא כיצד</span> <span class='chavrusa-gemara' data-chavrusa-idx='134' tabindex='-1'>אלמלא חמה של כסיל לא נתקיים</span> <span class='chavrusa-gemara' data-chavrusa-idx='135' tabindex='-1'>עולם מפני צינה של כימה</span> <span class='chavrusa-gemara' data-chavrusa-idx='136' tabindex='-1'>ואלמלא צינה של כימה לא נתקיים</span> <span class='chavrusa-gemara' data-chavrusa-idx='137' tabindex='-1'>עולם מפני חמה של כסיל</span> וגמירי <span class='chavrusa-gemara' data-chavrusa-idx='138' tabindex='-1'>אי</span> <span class='chavrusa-gemara' data-chavrusa-idx='139' tabindex='-1'>לאו</span> עוקצא דעקרבא <span class='chavrusa-gemara' data-chavrusa-idx='140' tabindex='-1'>דמנח בנהר דינור</span> <span class='chavrusa-gemara' data-chavrusa-idx='141' tabindex='-1'>כל מאן דהוה טריקא</span> <span class='chavrusa-gemara' data-chavrusa-idx='142' tabindex='-1'>ליה עקרבא</span> לא <span class='chavrusa-gemara' data-chavrusa-idx='143' tabindex='-1'>הוה</span> <span class='chavrusa-gemara' data-chavrusa-idx='144' tabindex='-1'>חיי</span> <span class='chavrusa-gemara' data-chavrusa-idx='145' tabindex='-1'>והיינו דקאמר ליה רחמנא לאיוב התקשר מעדנות</span> <span class='chavrusa-gemara' data-chavrusa-idx='146' tabindex='-1'>כימה או מושכות כסיל</span> <span class='chavrusa-gemara' data-chavrusa-idx='147' tabindex='-1'>תפתח</span> <span class='chavrusa-gemara' data-chavrusa-idx='148' tabindex='-1'>מאי כימה</span> <span class='chavrusa-gemara' data-chavrusa-idx='149' tabindex='-1'>אמר שמואל</span> <span class='chavrusa-gemara' data-chavrusa-idx='150' tabindex='-1'>כמאה ככבי</span> <span class='chavrusa-gemara' data-chavrusa-idx='151' tabindex='-1'>אמרי לה</span> דמכנפי <span class='chavrusa-gemara' data-chavrusa-idx='152' tabindex='-1'>ואמרי לה</span> ג] דמבדרן <span class='chavrusa-gemara' data-chavrusa-idx='153' tabindex='-1'>מאי עש</span> <span class='chavrusa-gemara' data-chavrusa-idx='154' tabindex='-1'>אמר רב יהודה יותא</span> <span class='chavrusa-gemara' data-chavrusa-idx='155' tabindex='-1'>מאי יותא</span> <span class='chavrusa-gemara' data-chavrusa-idx='156' tabindex='-1'>אמרי לה</span> <span class='chavrusa-gemara' data-chavrusa-idx='157' tabindex='-1'>זנב טלה</span> <span class='chavrusa-gemara' data-chavrusa-idx='158' tabindex='-1'>ואמרי לה</span> <span class='chavrusa-gemara' data-chavrusa-idx='159' tabindex='-1'>רישא דעגלא</span> <span class='chavrusa-gemara' data-chavrusa-idx='160' tabindex='-1'>ומסתברא כמאן דאמר</span> <span class='chavrusa-gemara' data-chavrusa-idx='161' tabindex='-1'>זנב טלה</span> <span class='chavrusa-gemara' data-chavrusa-idx='162' tabindex='-1'>דכתיב</span> ועיש על בניה תנחם <span class='chavrusa-gemara' data-chavrusa-idx='163' tabindex='-1'>אלמא</span> <span class='chavrusa-gemara' data-chavrusa-idx='164' tabindex='-1'>חסרה</span> <span class='chavrusa-gemara' data-chavrusa-idx='165' tabindex='-1'>ומתחזיא</span> כטרפא</div><div class='white-gutter' data-center-x='245.97' style='left:239.47px;top:90.32px;width:13.00px;height:570.33px'></div><div class='white-gutter' data-center-x='430.37' style='left:423.87px;top:90.32px;width:13.00px;height:111.86px'></div></div>
+
+<script>
+(function() {
+  let active = 0;
+  let rashiItems = null;
+  let lastGemaraTop = null;
+  let lastRashiTop = null;
+  function items() {
+    return Array.from(document.querySelectorAll('.chavrusa-gemara'));
+  }
+  function normalizeText(s) {
+    return (s || '')
+      .replace(/[֑-ׇ]/g, '')
+      .replace(/[״`]/g, '"')
+      .replace(/[׳']/g, "'")
+      .replace(/[^א-ת0-9"' ]+/g, ' ')
+      .replace(/\s+/g, ' ')
+      .trim();
+  }
+  function words(s) {
+    const n = normalizeText(s);
+    return n ? n.split(' ') : [];
+  }
+  function collectRashi() {
+    if (rashiItems) return rashiItems;
+    rashiItems = Array.from(document.querySelectorAll('.rashi-dh')).map(el => ({
+      el,
+      text: normalizeText(el.textContent),
+      words: words(el.textContent)
+    })).filter(item => item.words.length);
+    return rashiItems;
+  }
+  function clearRashi() {
+    collectRashi().forEach(item => item.el.classList.remove('is-rashi-match'));
+  }
+  function hasExactWindow(needleWords, haystackWords) {
+    if (!needleWords.length || !haystackWords.length) return false;
+    if (needleWords.length > haystackWords.length) return false;
+    const n = needleWords.length;
+    const needle = needleWords.join(' ');
+    const maxStart = haystackWords.length - n;
+    for (let i = 0; i <= maxStart; i++) {
+      if (haystackWords.slice(i, i + n).join(' ') === needle) return true;
+    }
+    return false;
+  }
+  function exactMatch(dhWords, gemWords) {
+    if (!dhWords.length || !gemWords.length) return 0;
+    return hasExactWindow(dhWords, gemWords) || hasExactWindow(gemWords, dhWords);
+  }
+  function visualTop(el) {
+    const r = el.getBoundingClientRect();
+    return r.top + window.scrollY;
+  }
+  function applyTosafotSecondLineIndent() {
+    document.querySelectorAll('.tosafot-entry').forEach(entry => {
+      const wordsInEntry = Array.from(entry.querySelectorAll('.tos-word'));
+      wordsInEntry.forEach(word => word.classList.remove('tos-second-line-indent'));
+      const rows = [];
+      wordsInEntry.forEach((word, idx) => {
+        const rects = word.getClientRects();
+        if (!rects.length) return;
+        const rect = rects[0];
+        const row = rows.find(item => Math.abs(item.top - rect.top) <= 1.5);
+        if (row) {
+          row.words.push({word, idx});
+          row.top = Math.min(row.top, rect.top);
+        } else {
+          rows.push({top: rect.top, words: [{word, idx}]});
+        }
+      });
+      rows.sort((a, b) => a.top - b.top);
+      if (rows.length < 2) return;
+      rows[1].words.sort((a, b) => a.idx - b.idx);
+      rows[1].words[0].word.classList.add('tos-second-line-indent');
+    });
+  }
+  function highlightRashiFor(gemaraEl, direction, prevGemaraEl) {
+    clearRashi();
+    const gw = words(gemaraEl ? gemaraEl.textContent : '');
+    if (!gw.length) return;
+    const currentGemaraTop = visualTop(gemaraEl);
+    const requireRashiProgress = direction > 0 && lastRashiTop !== null;
+    let best = null;
+    for (const item of collectRashi()) {
+      if (requireRashiProgress && visualTop(item.el) < lastRashiTop - 1) continue;
+      if (exactMatch(item.words, gw)) {
+        best = item;
+        break;
+      }
+    }
+    if (best) {
+      best.el.classList.add('is-rashi-match');
+      lastRashiTop = visualTop(best.el);
+    }
+    lastGemaraTop = currentGemaraTop;
+  }
+  function setActive(next, direction) {
+    const els = items();
+    if (!els.length) return;
+    const prevEl = els[active] || null;
+    active = ((next % els.length) + els.length) % els.length;
+    els.forEach((el, i) => {
+      const on = i === active;
+      el.classList.toggle('is-active', on);
+      el.setAttribute('aria-current', on ? 'true' : 'false');
+    });
+    highlightRashiFor(els[active], direction || 0, prevEl);
+    els[active].scrollIntoView({block: 'nearest', inline: 'nearest'});
+  }
+  window.__chavrusaStep = function(delta) {
+    setActive(active + delta, delta);
+  };
+  function onKey(e) {
+    if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
+      e.preventDefault();
+      window.__chavrusaStep(e.key === 'ArrowRight' ? -1 : 1);
+    } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+      e.preventDefault();
+      window.__chavrusaStep(e.key === 'ArrowLeft' ? 1 : -1);
+    }
+  }
+  document.addEventListener('keydown', onKey);
+  function boot() {
+    applyTosafotSecondLineIndent();
+    window.requestAnimationFrame(applyTosafotSecondLineIndent);
+    setActive(0, 0);
+  }
+  window.addEventListener('resize', () => window.requestAnimationFrame(applyTosafotSecondLineIndent));
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', boot, {once: true});
+  } else {
+    boot();
+  }
+})();
+</script>
+</body></html>

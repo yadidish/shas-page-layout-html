@@ -1,0 +1,180 @@
+<!doctype html><html lang='he' dir='rtl'><head><meta charset='utf-8'><title>Berakhot 3b</title><style>
+@font-face{font-family:OpenHebrewSerif;src:url('../../assets/fonts/noto/NotoSerifHebrew-VariableFont_wdth,wght.ttf') format('truetype');font-weight:100 900;font-style:normal}
+@font-face{font-family:OpenRashiHebrew;src:url('../../assets/fonts/noto/NotoRashiHebrew[wght].ttf') format('truetype');font-weight:100 900;font-style:normal}
+html,body{margin:0;padding:0;background:#eee;font-family:Arial,Helvetica,sans-serif;overflow:hidden}
+.page{position:relative;width:643.58px;height:992.58px;margin:0;background:white;border:1px solid #111;box-sizing:border-box;overflow:hidden}
+/* Vilna print header strip — each OCR line is absolutely positioned at its
+   PDF bbox so the HTML reproduces the print layout exactly: the large
+   center title ("מאימתי פרק ראשון ברכות"), the page number ("י:") right of
+   center, the corner marginal labels ("עין משפט / נר מצוה", "מסורת הש״ס").
+   Font size = polygon height so each piece matches print scale. */
+.page-header-line{position:absolute;font-family:OpenHebrewSerif,serif;font-weight:700;color:#111;white-space:nowrap;line-height:1;z-index:6;user-select:text}
+.page-header-fallback{position:absolute;top:4px;left:0;right:0;text-align:center;direction:rtl;font-family:OpenHebrewSerif,serif;font-size:22px;font-weight:700;color:#111;letter-spacing:0.5px;pointer-events:none;z-index:6;line-height:1.1}
+.page-header-fallback .sep{margin:0 8px;color:#666}
+/* No vertical padding: when chained slabs of the same stream overlap, the
+   pad-top of slab i+1 used to cover the bottom ~1.5 px of slab i's last
+   text line. With padding:0 on the y-axis, slab i+1 starts exactly at its
+   top with text — no chrome to hide the previous line. Horizontal padding
+   stays so text doesn't kiss the gutter edges. */
+.text-slab{position:absolute;box-sizing:border-box;overflow:hidden;direction:rtl;text-align:justify;padding:0 2px;background:white;z-index:1}
+.text-slab:after{content:'';display:inline-block;width:100%}
+.white-gutter{position:absolute;box-sizing:border-box;background:white;z-index:5;pointer-events:none}
+.gemara{font-weight:400}
+.chavrusa-gemara{background:transparent;box-decoration-break:clone;-webkit-box-decoration-break:clone;border-radius:3px;outline:1.3px solid transparent;outline-offset:1px;transition:background-color .08s,outline-color .08s}
+.chavrusa-gemara.is-active{background:rgba(255,214,51,.42);outline-color:#b58100}
+.rashi-dh{border-radius:3px;outline:1.2px solid transparent;outline-offset:1px;transition:background-color .08s,outline-color .08s}
+.rashi-dh.is-rashi-match{background:rgba(86,156,214,.25);outline-color:#1269d3}
+/* Rashi/Tosafot body — slightly heavier than the bare TTF outlines so the
+   commentary script reads with the right print weight. A small text-stroke
+   thickens the strokes without changing glyph metrics (advance widths stay
+   the same, so the Pillow line-wrap simulator stays accurate). */
+.rashi,.tosafot{-webkit-text-stroke:0.15px currentColor;text-stroke:0.15px currentColor}
+/* Rashi dibur hamatchil: heavy stroke at the body size — no 1.5× scaling. */
+.rashi b{font-weight:900;-webkit-text-stroke:0.45px currentColor;text-stroke:0.45px currentColor}
+/* Tosafot: every dibur starts a new visual paragraph. Only the second visual
+   line gets the Vilna inset; later lines return to the normal block edge. */
+.tosafot-entry{display:block;text-align:justify;text-align-last:center}
+.tos-word{display:inline}
+.tos-second-line-indent{margin-right:1.8em}
+.tosafot-dh{font-weight:900;-webkit-text-stroke:0.45px currentColor;text-stroke:0.45px currentColor}
+.tosafot-dh .tos-first{font-size:1.5em;line-height:1}
+.missing-text{color:#666;text-align:center;text-align-last:center;-webkit-text-stroke:0;text-stroke:0}
+</style></head><body>
+<div class='page' data-page='3b' data-layout-source='berakhot_layoutocr_azure_f0_shapes' data-text-source='hebrewbooks'><span class='page-header-line' style='left:535.38px;top:14.71px;font-size:14.58px'>ג:</span><span class='page-header-line' style='left:224.44px;top:10.51px;font-size:23.84px;font-weight:400'>מאימתי פרק ראשון ברכות</span><div class='text-slab rashi' data-kind='rashi' data-render-kind='rashi' data-slab='1' data-words='42' style='left:121.16px;top:33.00px;width:210.42px;height:57.32px;font-family:OpenRashiHebrew, serif;font-size:7.70px;line-height:11.165px;color:#111'><span class='rashi-dh'><b>בחדתי.</b></span> שנפלה מחדש שהחומה שלה נפלה ועודנה בחזקתה: <span class='rashi-dh'><b>חשד</b> <b>נמי</b> <b>ליכא.</b></span> דתנן (במסכת קדושין דף פ:) אבל אשה מתיחדת עם שני אנשים: <span class='rashi-dh'><b>בתרי</b> <b>ופריצי.</b></span> דאמרינן התם לא שנו אלא בכשרים: <span class='rashi-dh'><b>במקומן</b> <b>חיישינן.</b></span> במקום שהם מצויין תדיר חיישינן אפילו בתרי: <span class='rashi-dh'><b>בדברא.</b></span> בשדה: <span class='rashi-dh'><b>קדמו</b></span></div><div class='text-slab rashi' data-kind='rashi' data-render-kind='rashi' data-slab='2' data-words='314' style='left:121.29px;top:77.66px;width:118.27px;height:609.20px;font-family:OpenRashiHebrew, serif;font-size:7.70px;line-height:11.165px;color:#111'><span class='rashi-dh'><b>עיני</b> <b>אשמורות.</b></span> אלמא חצות לילה שהיה דוד עומד שתי משמרות יש בהם: <span class='rashi-dh'><b>ור&#x27;</b> <b>נתן.</b></span> אמר לך האי קדמו עיני אשמורות דקאמר דוד קדמו לשאר מלכים קאמר שדרכן לעמוד בשלש שעות ביום בתחלת שעה שלישית: <span class='rashi-dh'><b>שית</b> <b>דליליא.</b></span> חצות לילה הוי שש שעות: <span class='rashi-dh'><b>ותרתי</b> <b>דיממא.</b></span> ששאר מלכים ישנים הוו להו תרתי משמרות של שמונה שעות: <span class='rashi-dh'><b>אלא</b> <b>לדבר</b> <b>הלכה.</b></span> אסור לספר לפניו שהכל חייבין לספר בהן והמת דומם והוה ליה לועג לרש חרף עושהו (משלי יז) : <span class='rashi-dh'><b>אבל</b> <b>מילי</b> <b>דעלמא.</b></span> שאין גנאי למחריש בהן לית לן בה: <span class='rashi-dh'><b>מאורתא.</b></span> מתחלת הלילה: <span class='rashi-dh'><b>בנשף</b> <b>בערב</b> <b>יום.</b></span> בהעריב היום קרוי נשף: <span class='rashi-dh'><b>ה&quot;ק.</b></span> קרא דחצות לילה: <span class='rashi-dh'><b>מעולם</b> <b>לא</b> <b>עבר</b> <b>עלי</b> <b>חצות</b> <b>לילה</b> <b>בשינה.</b></span> שקודם לכן הייתי עומד: <span class='rashi-dh'><b>מתנמנם</b> <b>כסוס.</b></span> עוסק בתורה כשהוא מתנמנם. כסוס הזה שאינו נרדם לעולם אלא מתנמנם ונעור תמיד: <span class='rashi-dh'><b>בשירות</b> <b>ותשבחות.</b></span> והכי מפרש בההוא קרא להודות לך וגו&#x27;: <span class='rashi-dh'><b>למחרתם.</b></span> ליום מחרת של חנייתם שם: ה&quot;ג <span class='rashi-dh'><b>אי</b> <b>הכי</b> <b>לכתוב</b> <b>מהנשף</b> <b>ועד</b> <b>הנשף</b> <b>או</b> <b>מהערב</b> <b>ועד</b> <b>הערב</b> <b>אלא</b> <b>אמר</b> <b>רב</b> <b>אשי</b> <b>תרי</b> <b>נשפי</b> <b>הוו</b></span> : <span class='rashi-dh'><b>נשף</b> <b>יממא.</b></span> קפץ ועלה כמו לנשוף מדוכתיה (מגילה דף ג.) וכמו האי בוקא דאטמא דשף מדוכתיה טרפה (חולין דף מב:): <span class='rashi-dh'><b>ואתא</b> <b>איהו</b> <b>ואמר</b> <b>כחצות.</b></span> לפי שלא היה יודע לכוין השעה ולהעמיד דבריו בשעת המאורע: <span class='rashi-dh'><b>כנור</b> <b>היה</b> <b>תלוי</b> <b>למעלה</b> <b>ממטתו.</b></span> ונקביו לצד צפון כיון שהגיע חצות הלילה רוח צפונית מנשבת בו דאמר מר (בב&quot;ב דף כה.) ארבע רוחות מנשבות בכל יום ויום שש שעות ראשונות של יום מנשבת רוח מזרחית מהלוך החמה ושש אחרונות רוח דרומית ובתחלת הלילה רוח מערבית ובחצות הלילה רוח צפונית: <span class='rashi-dh'><b>אין</b> <b>הבור</b> <b>מתמלא</b> <b>מחוליתו.</b></span> העוקר חוליא מבור כרוי וחוזר ומשליכו לתוכו אין מתמלא בכך. אף כאן אם אין אתה מכין לעניים שבנו מזונות ממקום אחר אין אנו יכולין לפרנסם משל עצמנו: <span class='rashi-dh'><b>יועצים</b> <b>באחיתופל.</b></span> איזה הדרך ילכו והיאך יציבו מצב ומשחית וטכסיסי מארב מלחמה: <span class='rashi-dh'><b>ונמלכין</b> <b>בסנהדרין.</b></span> נוטלין מהם רשות כדי שיתפללו עליהם: <span class='rashi-dh'><b>ושואלין</b> <b>באורים</b> <b>ותומי&#x27;.</b></span> אם יצליחו: ה&quot;ג <span class='rashi-dh'><b>מאי</b> <b>קרא</b> <b>ואחרי</b> <b>אחיתופל</b> <b>בניהו</b> <b>בן</b> <b>יהוידע</b> <b>ואביתר</b> <b>ושר</b> <b>צבא</b> <b>למלך</b> <b>יואב</b> <b>אחיתופל</b> <b>זה</b> <b>יועץ</b></span> :</div><div class='text-slab rashi catchword' data-kind='rashi' data-render-kind='rashi' style='left:121.29px;top:658.24px;width:118.27px;height:12.16px;font-family:OpenRashiHebrew, serif;padding-left:20px;font-size:7.70px;line-height:11.165px;color:#111;text-align:left'>בניהו</div><div class='text-slab tosafot' data-kind='tosafot' data-render-kind='tosafot' data-slab='1' data-words='42' style='left:344.58px;top:33.00px;width:210.76px;height:57.32px;font-family:OpenRashiHebrew, serif;font-size:7.49px;line-height:10.864px;color:#111'><span class='tosafot-entry'><span class='tosafot-dh'><b class='tos-word tos-first'>במקומן</b> <b class='tos-word'>חיישינן.</b></span> <span class='tos-word'>פי&#x27;</span> <span class='tos-word'>שידוע</span> <span class='tos-word'>שרגילין</span> <span class='tos-word'>שם</span> <span class='tos-word'>המזיקין.</span> <span class='tos-word'>וההיא</span> <span class='tos-word'>דלעיל</span> <span class='tos-word'>דבתרי</span> <span class='tos-word'>ופריצי</span> <span class='tos-word'>ליכא</span> <span class='tos-word'>משום</span> <span class='tos-word'>מזיקין</span> <span class='tos-word'>איירי</span> <span class='tos-word'>בסתם</span> <span class='tos-word'>שאין</span> <span class='tos-word'>רגילין:</span></span> <span class='tosafot-entry'><span class='tosafot-dh'><b class='tos-word tos-first'>אין</b> <b class='tos-word'>אומרין</b> <b class='tos-word'>בפני</b> <b class='tos-word'>המת</b> <b class='tos-word'>אלא</b> <b class='tos-word'>דבריו</b> <b class='tos-word'>של</b> <b class='tos-word'>מת.</b></span> <span class='tos-word'>ופסק</span> <span class='tos-word'>רב</span> <span class='tos-word'>אלפס</span> <span class='tos-word'>משום</span> <span class='tos-word'>רב</span> <span class='tos-word'>האי</span> <span class='tos-word'>דוקא</span> <span class='tos-word'>דברי</span> <span class='tos-word'>תורה</span> <span class='tos-word'>אבל</span> <span class='tos-word'>דברים</span> <span class='tos-word'>דעלמא</span> <span class='tos-word'>לית</span> <span class='tos-word'>לן</span> <span class='tos-word'>בה.</span> <span class='tos-word'>ודוקא</span></span></div><div class='text-slab tosafot' data-kind='tosafot' data-render-kind='tosafot' data-slab='2' data-words='150' style='left:436.88px;top:76.45px;width:118.59px;height:260.73px;font-family:OpenRashiHebrew, serif;font-size:7.49px;line-height:10.864px;color:#111'><span class='tos-word'>בארבע</span> <span class='tos-word'>אמות</span> <span class='tos-word'>שלו:</span> <span class='tosafot-entry'><span class='tosafot-dh'><b class='tos-word tos-first'>רוח</b> <b class='tos-word'>צפונית</b> <b class='tos-word'>מנשבת.</b></span> <span class='tos-word'>פי&#x27;</span> <span class='tos-word'>לבדה</span> <span class='tos-word'>דהא</span> <span class='tos-word'>אמרינן</span> <span class='tos-word'>בפרק</span> <span class='tos-word'>לא</span> <span class='tos-word'>יחפור</span> <span class='tos-word'>(ב&quot;ב</span> <span class='tos-word'>דף</span> <span class='tos-word'>כה.)</span> <span class='tos-word'>שהיא</span> <span class='tos-word'>מנשבת</span> <span class='tos-word'>עם</span> <span class='tos-word'>כל</span> <span class='tos-word'>אחד</span> <span class='tos-word'>ואחד:</span></span> <span class='tosafot-entry'><span class='tosafot-dh'><b class='tos-word tos-first'>ואתא</b> <b class='tos-word'>איהו</b> <b class='tos-word'>ואמר</b> <b class='tos-word'>כחצות.</b></span> <span class='tos-word'>ואם</span> <span class='tos-word'>תאמר</span> <span class='tos-word'>מכל</span> <span class='tos-word'>מקום</span> <span class='tos-word'>לימא</span> <span class='tos-word'>בחצות</span> <span class='tos-word'>כמו</span> <span class='tos-word'>שאמרו</span> <span class='tos-word'>לו</span> <span class='tos-word'>מן</span> <span class='tos-word'>השמים</span> <span class='tos-word'>דהא</span> <span class='tos-word'>אמת</span> <span class='tos-word'>אמרו</span> <span class='tos-word'>לו.</span> <span class='tos-word'>וי&quot;ל</span> <span class='tos-word'>שלא</span> <span class='tos-word'>רצה</span> <span class='tos-word'>לומר</span> <span class='tos-word'>להם</span> <span class='tos-word'>דבר</span> <span class='tos-word'>שלא</span> <span class='tos-word'>היה</span> <span class='tos-word'>יכול</span> <span class='tos-word'>להראות</span> <span class='tos-word'>ולהוכיח</span> <span class='tos-word'>אם</span> <span class='tos-word'>ישאלו</span> <span class='tos-word'>לו:</span></span> <span class='tosafot-entry'><span class='tosafot-dh'><b class='tos-word tos-first'>ואין</b> <b class='tos-word'>הבור</b> <b class='tos-word'>מתמלא</b> <b class='tos-word'>מחוליתו.</b></span> <span class='tos-word'>פירש</span> <span class='tos-word'>רש&quot;י</span> <span class='tos-word'>אם</span> <span class='tos-word'>יחפור</span> <span class='tos-word'>ויחזיר</span> <span class='tos-word'>בו</span> <span class='tos-word'>עפרו</span> <span class='tos-word'>לא</span> <span class='tos-word'>יהא</span> <span class='tos-word'>מלא.</span> <span class='tos-word'>ותימא</span> <span class='tos-word'>דאין</span> <span class='tos-word'>הנדון</span> <span class='tos-word'>דומה</span> <span class='tos-word'>לראיה</span> <span class='tos-word'>שהרי</span> <span class='tos-word'>לא</span> <span class='tos-word'>היה</span> <span class='tos-word'>אומר</span> <span class='tos-word'>להם</span> <span class='tos-word'>אלא</span> <span class='tos-word'>ליטול</span> <span class='tos-word'>מן</span> <span class='tos-word'>העשירים</span> <span class='tos-word'>וליתן</span> <span class='tos-word'>לעניים.</span> <span class='tos-word'>אם</span> <span class='tos-word'>היה</span> <span class='tos-word'>מצוה</span> <span class='tos-word'>ליטול</span> <span class='tos-word'>מן</span> <span class='tos-word'>העניים</span> <span class='tos-word'>ולחזור</span> <span class='tos-word'>וליתן</span> <span class='tos-word'>להם</span> <span class='tos-word'>אז</span> <span class='tos-word'>היה</span> <span class='tos-word'>דומה</span> <span class='tos-word'>למשל.</span> <span class='tos-word'>ומפרש</span> <span class='tos-word'>רבינו</span> <span class='tos-word'>תם</span> <span class='tos-word'>מחוליתו</span> <span class='tos-word'>מנביעתו</span> <span class='tos-word'>כלומר</span> <span class='tos-word'>אין</span> <span class='tos-word'>הבור</span> <span class='tos-word'>מתמלא</span> <span class='tos-word'>מן</span> <span class='tos-word'>המים</span> <span class='tos-word'>הנובעים</span> <span class='tos-word'>בו.</span> <span class='tos-word'>ובתוספתא</span> <span class='tos-word'>יש</span> <span class='tos-word'>אין</span> <span class='tos-word'>הבור</span> <span class='tos-word'>מתמלא</span> <span class='tos-word'>מחוליתו</span> <span class='tos-word'>אלא</span> <span class='tos-word'>אם</span> <span class='tos-word'>כן</span> <span class='tos-word'>מושכין</span> <span class='tos-word'>לו</span> <span class='tos-word'>מים</span> <span class='tos-word'>מצד</span> <span class='tos-word'>אחר.</span> <span class='tos-word'>ור&quot;י</span> <span class='tos-word'>פירש</span> <span class='tos-word'>שאם</span> <span class='tos-word'>תחפור</span> <span class='tos-word'>מצד</span> <span class='tos-word'>זה</span> <span class='tos-word'>ותניח</span> <span class='tos-word'>מצד</span> <span class='tos-word'>אחר</span> <span class='tos-word'>לא</span> <span class='tos-word'>תמלא.</span> <span class='tos-word'>שמה</span> <span class='tos-word'>שנותן</span> <span class='tos-word'>כאן</span> <span class='tos-word'>חסר</span> <span class='tos-word'>כאן.</span> <span class='tos-word'>כמו</span> <span class='tos-word'>כן</span> <span class='tos-word'>מה</span> <span class='tos-word'>שנוטל</span> <span class='tos-word'>מן</span> <span class='tos-word'>העשירים</span> <span class='tos-word'>יתחסר</span> <span class='tos-word'>מן</span> <span class='tos-word'>העשירים:</span></span></div><div class='text-slab tosafot catchword' data-kind='tosafot' data-render-kind='tosafot' style='left:436.88px;top:326.32px;width:118.59px;height:11.86px;font-family:OpenRashiHebrew, serif;padding-left:20px;font-size:7.49px;line-height:10.864px;color:#111;text-align:left'>בניהו</div><div class='text-slab gemara' data-kind='gemara' data-render-kind='gemara' data-slab='1' data-words='149' style='left:252.56px;top:90.32px;width:171.32px;height:259.87px;font-family:OpenHebrewSerif, serif;font-size:9.50px;line-height:12.350px;color:#111'><span class='chavrusa-gemara' data-chavrusa-idx='0' tabindex='-1'>בחדתי</span> <span class='chavrusa-gemara' data-chavrusa-idx='1' tabindex='-1'>ותיפוק ליה משום</span> <span class='chavrusa-gemara' data-chavrusa-idx='2' tabindex='-1'>מזיקין</span> בתרי <span class='chavrusa-gemara' data-chavrusa-idx='3' tabindex='-1'>אי</span> בתרי <span class='chavrusa-gemara' data-chavrusa-idx='4' tabindex='-1'>חשד נמי ליכא</span> <span class='chavrusa-gemara' data-chavrusa-idx='5' tabindex='-1'>בתרי ופריצי.</span> <span class='chavrusa-gemara' data-chavrusa-idx='6' tabindex='-1'>מפני המפולת</span> <span class='chavrusa-gemara' data-chavrusa-idx='7' tabindex='-1'>ותיפוק ליה משום</span> חשד ומזיקין <span class='chavrusa-gemara' data-chavrusa-idx='8' tabindex='-1'>בתרי וכשרי.</span> <span class='chavrusa-gemara' data-chavrusa-idx='9' tabindex='-1'>מפני המזיקין</span> <span class='chavrusa-gemara' data-chavrusa-idx='10' tabindex='-1'>ותיפוק ליה</span> <span class='chavrusa-gemara' data-chavrusa-idx='11' tabindex='-1'>מפני</span> חשד ומפולת <span class='chavrusa-gemara' data-chavrusa-idx='12' tabindex='-1'>בחורבה חדתי ובתרי וכשרי</span> <span class='chavrusa-gemara' data-chavrusa-idx='13' tabindex='-1'>אי</span> <span class='chavrusa-gemara' data-chavrusa-idx='14' tabindex='-1'>בתרי מזיקין נמי ליכא</span> <span class='chavrusa-gemara' data-chavrusa-idx='15' tabindex='-1'>במקומן חיישינן</span> ואב&quot;א <span class='chavrusa-gemara' data-chavrusa-idx='16' tabindex='-1'>לעולם</span> <span class='chavrusa-gemara' data-chavrusa-idx='17' tabindex='-1'>בחד</span> ובחורבה <span class='chavrusa-gemara' data-chavrusa-idx='18' tabindex='-1'>חדתי</span> דקאי <span class='chavrusa-gemara' data-chavrusa-idx='19' tabindex='-1'>בדברא</span> <span class='chavrusa-gemara' data-chavrusa-idx='20' tabindex='-1'>דהתם</span> <span class='chavrusa-gemara' data-chavrusa-idx='21' tabindex='-1'>משום חשד ליכא</span> דהא <span class='chavrusa-gemara' data-chavrusa-idx='22' tabindex='-1'>אשה</span> <span class='chavrusa-gemara' data-chavrusa-idx='23' tabindex='-1'>בדברא</span> לא שכיחא ומשום <span class='chavrusa-gemara' data-chavrusa-idx='24' tabindex='-1'>מזיקין</span> <span class='chavrusa-gemara' data-chavrusa-idx='25' tabindex='-1'>איכא:</span> ת&quot;ר <span class='chavrusa-gemara' data-chavrusa-idx='26' tabindex='-1'>ארבע משמרות הוי הלילה</span> <span class='chavrusa-gemara' data-chavrusa-idx='27' tabindex='-1'>דברי</span> רבי <span class='chavrusa-gemara' data-chavrusa-idx='28' tabindex='-1'>ר&#x27;</span> <span class='chavrusa-gemara' data-chavrusa-idx='29' tabindex='-1'>נתן אומר שלש</span> מ&quot;ט דר&#x27; נתן דכתיב <span class='chavrusa-gemara' data-chavrusa-idx='30' tabindex='-1'>ויבא גדעון ומאה איש אשר אתו בקצה המחנה ראש האשמורת התיכונה</span> <span class='chavrusa-gemara' data-chavrusa-idx='31' tabindex='-1'>תנא</span> <span class='chavrusa-gemara' data-chavrusa-idx='32' tabindex='-1'>אין</span> תיכונה <span class='chavrusa-gemara' data-chavrusa-idx='33' tabindex='-1'>אלא שיש</span> <span class='chavrusa-gemara' data-chavrusa-idx='34' tabindex='-1'>לפניה</span> ולאחריה <span class='chavrusa-gemara' data-chavrusa-idx='35' tabindex='-1'>ורבי</span> <span class='chavrusa-gemara' data-chavrusa-idx='36' tabindex='-1'>מאי תיכונה</span> <span class='chavrusa-gemara' data-chavrusa-idx='37' tabindex='-1'>אחת מן התיכונה שבתיכונות</span> ור&#x27; נתן <span class='chavrusa-gemara' data-chavrusa-idx='38' tabindex='-1'>מי כתיב תיכונה שבתיכונות</span> <span class='chavrusa-gemara' data-chavrusa-idx='39' tabindex='-1'>תיכונה כתיב</span> מ&quot;ט דרבי א&quot;ר זריקא א&quot;ר אמי א&quot;ר יהושע <span class='chavrusa-gemara' data-chavrusa-idx='40' tabindex='-1'>בן</span> לוי <span class='chavrusa-gemara' data-chavrusa-idx='41' tabindex='-1'>כתוב אחד</span> אומר <span class='chavrusa-gemara' data-chavrusa-idx='42' tabindex='-1'>חצות לילה אקום להודות לך על משפטי צדקך</span> וכתוב <span class='chavrusa-gemara' data-chavrusa-idx='43' tabindex='-1'>אחד</span> אומר <span class='chavrusa-gemara' data-chavrusa-idx='44' tabindex='-1'>קדמו עיני אשמורות</span> <span class='chavrusa-gemara' data-chavrusa-idx='45' tabindex='-1'>הא כיצד</span> <span class='chavrusa-gemara' data-chavrusa-idx='46' tabindex='-1'>ארבע משמרות הוי הלילה</span> ור&#x27; נתן <span class='chavrusa-gemara' data-chavrusa-idx='47' tabindex='-1'>סבר לה כרבי יהושע דתנן</span> <span class='chavrusa-gemara' data-chavrusa-idx='48' tabindex='-1'>ר&#x27;</span> יהושע</div><div class='text-slab gemara' data-kind='gemara' data-render-kind='gemara' data-slab='2' data-words='363' style='left:252.56px;top:337.32px;width:302.68px;height:368.82px;font-family:OpenHebrewSerif, serif;font-size:9.50px;line-height:12.350px;color:#111'>אומר עד <span class='chavrusa-gemara' data-chavrusa-idx='49' tabindex='-1'>שלש שעות</span> <span class='chavrusa-gemara' data-chavrusa-idx='50' tabindex='-1'>שכן דרך מלכים</span> <span class='chavrusa-gemara' data-chavrusa-idx='51' tabindex='-1'>לעמוד</span> <span class='chavrusa-gemara' data-chavrusa-idx='52' tabindex='-1'>בשלש שעות</span> <span class='chavrusa-gemara' data-chavrusa-idx='53' tabindex='-1'>שית דליליא</span> <span class='chavrusa-gemara' data-chavrusa-idx='54' tabindex='-1'>ותרתי דיממא</span> <span class='chavrusa-gemara' data-chavrusa-idx='55' tabindex='-1'>הוו להו</span> <span class='chavrusa-gemara' data-chavrusa-idx='56' tabindex='-1'>שתי משמרות</span> <span class='chavrusa-gemara' data-chavrusa-idx='57' tabindex='-1'>רב אשי אמר</span> <span class='chavrusa-gemara' data-chavrusa-idx='58' tabindex='-1'>משמרה ופלגא נמי משמרות קרו להו:</span> <span class='chavrusa-gemara' data-chavrusa-idx='59' tabindex='-1'>ואמר</span> רבי זריקא אמר רבי אמי <span class='chavrusa-gemara' data-chavrusa-idx='60' tabindex='-1'>אמר רבי יהושע בן לוי</span> <span class='chavrusa-gemara' data-chavrusa-idx='61' tabindex='-1'>אין</span> אומרין בפני <span class='chavrusa-gemara' data-chavrusa-idx='62' tabindex='-1'>המת</span> אלא דבריו <span class='chavrusa-gemara' data-chavrusa-idx='63' tabindex='-1'>של</span> <span class='chavrusa-gemara' data-chavrusa-idx='64' tabindex='-1'>מת</span> <span class='chavrusa-gemara' data-chavrusa-idx='65' tabindex='-1'>אמר רבי אבא בר כהנא לא אמרן אלא בדברי תורה</span> <span class='chavrusa-gemara' data-chavrusa-idx='66' tabindex='-1'>אבל מילי דעלמא לית לן בה</span> <span class='chavrusa-gemara' data-chavrusa-idx='67' tabindex='-1'>ואיכא דאמרי</span> <span class='chavrusa-gemara' data-chavrusa-idx='68' tabindex='-1'>אמר רבי אבא בר כהנא לא אמרן</span> אלא <span class='chavrusa-gemara' data-chavrusa-idx='69' tabindex='-1'>[אפילו]</span> <span class='chavrusa-gemara' data-chavrusa-idx='70' tabindex='-1'>בדברי תורה</span> וכ&quot;ש <span class='chavrusa-gemara' data-chavrusa-idx='71' tabindex='-1'>מילי</span> דעלמא: <span class='chavrusa-gemara' data-chavrusa-idx='72' tabindex='-1'>ודוד</span> <span class='chavrusa-gemara' data-chavrusa-idx='73' tabindex='-1'>בפלגא דליליא הוה קאי</span> <span class='chavrusa-gemara' data-chavrusa-idx='74' tabindex='-1'>מאורתא</span> הוה <span class='chavrusa-gemara' data-chavrusa-idx='75' tabindex='-1'>קאי</span> דכתיב <span class='chavrusa-gemara' data-chavrusa-idx='76' tabindex='-1'>קדמתי בנשף ואשועה</span> <span class='chavrusa-gemara' data-chavrusa-idx='77' tabindex='-1'>וממאי דהאי נשף אורתא</span> הוא דכתיב <span class='chavrusa-gemara' data-chavrusa-idx='78' tabindex='-1'>בנשף</span> <span class='chavrusa-gemara' data-chavrusa-idx='79' tabindex='-1'>בערב יום באישון לילה ואפילה</span> <span class='chavrusa-gemara' data-chavrusa-idx='80' tabindex='-1'>אמר רב אושעיא אמר רבי אחא</span> <span class='chavrusa-gemara' data-chavrusa-idx='81' tabindex='-1'>הכי קאמר</span> (דוד) מעולם <span class='chavrusa-gemara' data-chavrusa-idx='82' tabindex='-1'>לא עבר</span> <span class='chavrusa-gemara' data-chavrusa-idx='83' tabindex='-1'>עלי</span> חצות לילה בשינה. <span class='chavrusa-gemara' data-chavrusa-idx='84' tabindex='-1'>רבי זירא אמר</span> <span class='chavrusa-gemara' data-chavrusa-idx='85' tabindex='-1'>עד חצות</span> לילה היה <span class='chavrusa-gemara' data-chavrusa-idx='86' tabindex='-1'>מתנמנם כסוס</span> <span class='chavrusa-gemara' data-chavrusa-idx='87' tabindex='-1'>מכאן ואילך</span> היה מתגבר כארי <span class='chavrusa-gemara' data-chavrusa-idx='88' tabindex='-1'>רב אשי אמר</span> <span class='chavrusa-gemara' data-chavrusa-idx='89' tabindex='-1'>עד חצות לילה היה עוסק בדברי תורה</span> <span class='chavrusa-gemara' data-chavrusa-idx='90' tabindex='-1'>מכאן ואילך</span> <span class='chavrusa-gemara' data-chavrusa-idx='91' tabindex='-1'>בשירות ותשבחות.</span> ונשף <span class='chavrusa-gemara' data-chavrusa-idx='92' tabindex='-1'>אורתא הוא</span> <span class='chavrusa-gemara' data-chavrusa-idx='93' tabindex='-1'>הא</span> נשף צפרא הוא דכתיב <span class='chavrusa-gemara' data-chavrusa-idx='94' tabindex='-1'>ויכם דוד מהנשף ועד הערב למחרתם</span> <span class='chavrusa-gemara' data-chavrusa-idx='95' tabindex='-1'>מאי לאו</span> <span class='chavrusa-gemara' data-chavrusa-idx='96' tabindex='-1'>מצפרא ועד ליליא</span> לא <span class='chavrusa-gemara' data-chavrusa-idx='97' tabindex='-1'>מאורתא ועד אורתא</span> <span class='chavrusa-gemara' data-chavrusa-idx='98' tabindex='-1'>אי הכי</span> <span class='chavrusa-gemara' data-chavrusa-idx='99' tabindex='-1'>לכתוב מהנשף ועד הנשף</span> <span class='chavrusa-gemara' data-chavrusa-idx='100' tabindex='-1'>או</span> <span class='chavrusa-gemara' data-chavrusa-idx='101' tabindex='-1'>מהערב ועד הערב</span> <span class='chavrusa-gemara' data-chavrusa-idx='102' tabindex='-1'>אלא אמר רבא</span> <span class='chavrusa-gemara' data-chavrusa-idx='103' tabindex='-1'>תרי</span> נשפי הוו <span class='chavrusa-gemara' data-chavrusa-idx='104' tabindex='-1'>נשף ליליא</span> ואתי <span class='chavrusa-gemara' data-chavrusa-idx='105' tabindex='-1'>יממא</span> <span class='chavrusa-gemara' data-chavrusa-idx='106' tabindex='-1'>נשף יממא</span> ואתי <span class='chavrusa-gemara' data-chavrusa-idx='107' tabindex='-1'>ליליא.</span> <span class='chavrusa-gemara' data-chavrusa-idx='108' tabindex='-1'>ודוד</span> <span class='chavrusa-gemara' data-chavrusa-idx='109' tabindex='-1'>מי הוה ידע פלגא דליליא אימת</span> <span class='chavrusa-gemara' data-chavrusa-idx='110' tabindex='-1'>השתא</span> משה רבינו לא הוה ידע א] דכתיב <span class='chavrusa-gemara' data-chavrusa-idx='111' tabindex='-1'>כחצות הלילה אני יוצא בתוך מצרים</span> מאי כחצות <span class='chavrusa-gemara' data-chavrusa-idx='112' tabindex='-1'>אילימא</span> <span class='chavrusa-gemara' data-chavrusa-idx='113' tabindex='-1'>דאמר ליה קודשא בריך הוא כחצות</span> <span class='chavrusa-gemara' data-chavrusa-idx='114' tabindex='-1'>מי</span> <span class='chavrusa-gemara' data-chavrusa-idx='115' tabindex='-1'>איכא</span> ספיקא קמי שמיא אלא <span class='chavrusa-gemara' data-chavrusa-idx='116' tabindex='-1'>דאמר ליה</span> <span class='chavrusa-gemara' data-chavrusa-idx='117' tabindex='-1'>(למחר) בחצות</span> <span class='chavrusa-gemara' data-chavrusa-idx='118' tabindex='-1'>(כי השתא)</span> <span class='chavrusa-gemara' data-chavrusa-idx='119' tabindex='-1'>ואתא איהו ואמר</span> כחצות <span class='chavrusa-gemara' data-chavrusa-idx='120' tabindex='-1'>אלמא</span> מספקא <span class='chavrusa-gemara' data-chavrusa-idx='121' tabindex='-1'>לי&#x27;</span> <span class='chavrusa-gemara' data-chavrusa-idx='122' tabindex='-1'>ודוד</span> הוה ידע <span class='chavrusa-gemara' data-chavrusa-idx='123' tabindex='-1'>דוד סימנא הוה ליה</span> <span class='chavrusa-gemara' data-chavrusa-idx='124' tabindex='-1'>דאמר רב</span> אחא <span class='chavrusa-gemara' data-chavrusa-idx='125' tabindex='-1'>בר</span> ביזנא א&quot;ר שמעון חסידא כנור היה תלוי למעלה ממטתו <span class='chavrusa-gemara' data-chavrusa-idx='126' tabindex='-1'>של</span> דוד וכיון שהגיע חצות לילה <span class='chavrusa-gemara' data-chavrusa-idx='127' tabindex='-1'>בא</span> רוח צפונית ונושבת בו ומנגן מאליו <span class='chavrusa-gemara' data-chavrusa-idx='128' tabindex='-1'>מיד היה עומד ועוסק בתורה עד שעלה עמוד</span> <span class='chavrusa-gemara' data-chavrusa-idx='129' tabindex='-1'>השחר</span> <span class='chavrusa-gemara' data-chavrusa-idx='130' tabindex='-1'>כיון שעלה עמוד השחר נכנסו חכמי ישראל אצלו</span> <span class='chavrusa-gemara' data-chavrusa-idx='131' tabindex='-1'>אמרו לו</span> <span class='chavrusa-gemara' data-chavrusa-idx='132' tabindex='-1'>אדונינו המלך עמך ישראל צריכין פרנסה</span> <span class='chavrusa-gemara' data-chavrusa-idx='133' tabindex='-1'>אמר להם</span> <span class='chavrusa-gemara' data-chavrusa-idx='134' tabindex='-1'>לכו והתפרנסו זה מזה</span> <span class='chavrusa-gemara' data-chavrusa-idx='135' tabindex='-1'>אמרו לו אין הקומץ משביע את הארי</span> <span class='chavrusa-gemara' data-chavrusa-idx='136' tabindex='-1'>ואין</span> <span class='chavrusa-gemara' data-chavrusa-idx='137' tabindex='-1'>הבור מתמלא מחוליתו</span> <span class='chavrusa-gemara' data-chavrusa-idx='138' tabindex='-1'>אמר להם</span> <span class='chavrusa-gemara' data-chavrusa-idx='139' tabindex='-1'>לכו ופשטו ידיכם</span> <span class='chavrusa-gemara' data-chavrusa-idx='140' tabindex='-1'>בגדוד</span> <span class='chavrusa-gemara' data-chavrusa-idx='141' tabindex='-1'>מיד יועצים באחיתופל</span> ונמלכין בסנהדרין <span class='chavrusa-gemara' data-chavrusa-idx='142' tabindex='-1'>ושואלין באורים ותומים</span> <span class='chavrusa-gemara' data-chavrusa-idx='143' tabindex='-1'>אמר רב יוסף מאי קרא</span> (דכתיב) <span class='chavrusa-gemara' data-chavrusa-idx='144' tabindex='-1'>ואחרי אחיתופל בניהו בן יהוידע ואביתר ושר צבא למלך יואב</span> <span class='chavrusa-gemara' data-chavrusa-idx='145' tabindex='-1'>אחיתופל</span> <span class='chavrusa-gemara' data-chavrusa-idx='146' tabindex='-1'>זה יועץ</span> וכה&quot;א <span class='chavrusa-gemara' data-chavrusa-idx='147' tabindex='-1'>ועצת אחיתופל אשר יעץ בימים ההם כאשר ישאל</span> <span class='chavrusa-gemara' data-chavrusa-idx='148' tabindex='-1'>(איש) בדבר האלהים</span> בניהו</div><div class='white-gutter' data-center-x='338.08' style='left:331.58px;top:33.00px;width:13.00px;height:57.32px'></div><div class='white-gutter' data-center-x='246.06' style='left:239.56px;top:90.32px;width:13.00px;height:550.27px'></div><div class='white-gutter' data-center-x='430.38' style='left:423.88px;top:90.32px;width:13.00px;height:246.57px'></div></div>
+
+<script>
+(function() {
+  let active = 0;
+  let rashiItems = null;
+  let lastGemaraTop = null;
+  let lastRashiTop = null;
+  function items() {
+    return Array.from(document.querySelectorAll('.chavrusa-gemara'));
+  }
+  function normalizeText(s) {
+    return (s || '')
+      .replace(/[֑-ׇ]/g, '')
+      .replace(/[״`]/g, '"')
+      .replace(/[׳']/g, "'")
+      .replace(/[^א-ת0-9"' ]+/g, ' ')
+      .replace(/\s+/g, ' ')
+      .trim();
+  }
+  function words(s) {
+    const n = normalizeText(s);
+    return n ? n.split(' ') : [];
+  }
+  function collectRashi() {
+    if (rashiItems) return rashiItems;
+    rashiItems = Array.from(document.querySelectorAll('.rashi-dh')).map(el => ({
+      el,
+      text: normalizeText(el.textContent),
+      words: words(el.textContent)
+    })).filter(item => item.words.length);
+    return rashiItems;
+  }
+  function clearRashi() {
+    collectRashi().forEach(item => item.el.classList.remove('is-rashi-match'));
+  }
+  function hasExactWindow(needleWords, haystackWords) {
+    if (!needleWords.length || !haystackWords.length) return false;
+    if (needleWords.length > haystackWords.length) return false;
+    const n = needleWords.length;
+    const needle = needleWords.join(' ');
+    const maxStart = haystackWords.length - n;
+    for (let i = 0; i <= maxStart; i++) {
+      if (haystackWords.slice(i, i + n).join(' ') === needle) return true;
+    }
+    return false;
+  }
+  function exactMatch(dhWords, gemWords) {
+    if (!dhWords.length || !gemWords.length) return 0;
+    return hasExactWindow(dhWords, gemWords) || hasExactWindow(gemWords, dhWords);
+  }
+  function visualTop(el) {
+    const r = el.getBoundingClientRect();
+    return r.top + window.scrollY;
+  }
+  function applyTosafotSecondLineIndent() {
+    document.querySelectorAll('.tosafot-entry').forEach(entry => {
+      const wordsInEntry = Array.from(entry.querySelectorAll('.tos-word'));
+      wordsInEntry.forEach(word => word.classList.remove('tos-second-line-indent'));
+      const rows = [];
+      wordsInEntry.forEach((word, idx) => {
+        const rects = word.getClientRects();
+        if (!rects.length) return;
+        const rect = rects[0];
+        const row = rows.find(item => Math.abs(item.top - rect.top) <= 1.5);
+        if (row) {
+          row.words.push({word, idx});
+          row.top = Math.min(row.top, rect.top);
+        } else {
+          rows.push({top: rect.top, words: [{word, idx}]});
+        }
+      });
+      rows.sort((a, b) => a.top - b.top);
+      if (rows.length < 2) return;
+      rows[1].words.sort((a, b) => a.idx - b.idx);
+      rows[1].words[0].word.classList.add('tos-second-line-indent');
+    });
+  }
+  function highlightRashiFor(gemaraEl, direction, prevGemaraEl) {
+    clearRashi();
+    const gw = words(gemaraEl ? gemaraEl.textContent : '');
+    if (!gw.length) return;
+    const currentGemaraTop = visualTop(gemaraEl);
+    const requireRashiProgress = direction > 0 && lastRashiTop !== null;
+    let best = null;
+    for (const item of collectRashi()) {
+      if (requireRashiProgress && visualTop(item.el) < lastRashiTop - 1) continue;
+      if (exactMatch(item.words, gw)) {
+        best = item;
+        break;
+      }
+    }
+    if (best) {
+      best.el.classList.add('is-rashi-match');
+      lastRashiTop = visualTop(best.el);
+    }
+    lastGemaraTop = currentGemaraTop;
+  }
+  function setActive(next, direction) {
+    const els = items();
+    if (!els.length) return;
+    const prevEl = els[active] || null;
+    active = ((next % els.length) + els.length) % els.length;
+    els.forEach((el, i) => {
+      const on = i === active;
+      el.classList.toggle('is-active', on);
+      el.setAttribute('aria-current', on ? 'true' : 'false');
+    });
+    highlightRashiFor(els[active], direction || 0, prevEl);
+    els[active].scrollIntoView({block: 'nearest', inline: 'nearest'});
+  }
+  window.__chavrusaStep = function(delta) {
+    setActive(active + delta, delta);
+  };
+  function onKey(e) {
+    if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
+      e.preventDefault();
+      window.__chavrusaStep(e.key === 'ArrowRight' ? -1 : 1);
+    } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+      e.preventDefault();
+      window.__chavrusaStep(e.key === 'ArrowLeft' ? 1 : -1);
+    }
+  }
+  document.addEventListener('keydown', onKey);
+  function boot() {
+    applyTosafotSecondLineIndent();
+    window.requestAnimationFrame(applyTosafotSecondLineIndent);
+    setActive(0, 0);
+  }
+  window.addEventListener('resize', () => window.requestAnimationFrame(applyTosafotSecondLineIndent));
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', boot, {once: true});
+  } else {
+    boot();
+  }
+})();
+</script>
+</body></html>
