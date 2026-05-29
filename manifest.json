@@ -3,7 +3,8 @@
   "description": "Static ready-to-publish page-layout HTML pages.",
   "structure": {
     "tractate/<tractate>/<page>.html": "rendered page-layout pages",
-    "assets/fonts/noto": "open fonts used by the rendered pages"
+    "assets/fonts/frank-ruhl-libre": "Frank Ruhl Libre — gemara body and page header",
+    "assets/fonts/mekorot": "Mekorot Rashi — rashi and tosafot streams"
   },
   "tractates": {
     "berakhot": {
