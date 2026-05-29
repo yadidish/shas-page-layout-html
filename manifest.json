@@ -3,8 +3,8 @@
   "description": "Static ready-to-publish page-layout HTML pages.",
   "structure": {
     "tractate/<tractate>/<page>.html": "rendered page-layout pages",
-    "assets/fonts/frank-ruhl-libre": "Frank Ruhl Libre — gemara body and page header",
-    "assets/fonts/mekorot": "Mekorot Rashi — rashi and tosafot streams"
+    "assets/fonts/mekorot-vilna": "Mekorot Vilna — gemara body and page header (GPL v2, Maxim Iorsh)",
+    "assets/fonts/mekorot": "Mekorot Rashi — rashi and tosafot streams (SIL OFL 1.1)"
   },
   "tractates": {
     "berakhot": {
